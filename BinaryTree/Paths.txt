@@ -1,0 +1,3 @@
+C:\Users\Marjan Hussain\source\repos\BinaryTree\x64\Release
+C:\Users\Marjan Hussain\source\repos\BinaryTree\x64\Debug
+
