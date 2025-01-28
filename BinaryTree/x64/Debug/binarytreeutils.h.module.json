@@ -1,0 +1,22 @@
+{
+    "version": 1,
+    "revision": 0,
+    "rules": [
+        {
+            "primary-output": "x64\\Debug\\BinaryTreeUtils.h.obj",
+            "outputs": [
+                "C:\\Users\\Marjan Hussain\\source\\repos\\BinaryTree\\BinaryTree\\x64\\Debug\\vc143.pdb",
+                "x64\\Debug\\",
+                "C:\\Users\\Marjan Hussain\\source\\repos\\BinaryTree\\BinaryTree\\x64\\Debug\\BinaryTreeUtils.h.ifc"
+            ],
+            "provides": [
+                {
+                    "logical-name": "BinaryTreeUtils.h",
+                    "source-path": "c:\\users\\marjan hussain\\source\\repos\\binarytree\\binarytree\\binarytreeutils.h",
+                    "lookup-method": "absolute"
+                }
+            ],
+            "requires": []
+        }
+    ]
+}

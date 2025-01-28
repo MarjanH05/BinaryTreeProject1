@@ -1,0 +1,4 @@
+Only works in format (x + y) doesnt work (x+y) DONE 
+Doesn't work with negative numbers (crashes the program) DONE
+Hasn't been made to handle edge cases like 5(2)(3) will write output of last () DONE
+Change if statements to switch cases DONE
