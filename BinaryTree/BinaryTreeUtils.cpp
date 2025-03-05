@@ -1,15 +1,15 @@
 #include "BinaryTreeUtils.h"
 #include <regex>
 
-int precedence(const std::string& op) {
+int BinaryTreeUtils::precedence(const std::string& op) {
     if (op == "+" || op == "-") return 1;
     if (op == "*" || op == "/") return 2;
     if (op == "^") return 3;
     return 0;
 }
 
-std::vector<std::string> tokenize(const std::string& expression) {
-    std::regex token_regex("(-?\\d*\\.\\d+|-?\\d+|[-+*/^()])");
+std::vector<std::string> BinaryTreeUtils::tokenize(const std::string& expression) {
+    std::regex token_regex("(-?\\d*\\.\\d+|-?\\d+|[-+*/^()])"); //possible negative , followed by the tokens
     std::vector<std::string> tokens;
     auto begin = std::sregex_iterator(expression.begin(), expression.end(), token_regex);
     auto end = std::sregex_iterator();
@@ -21,7 +21,7 @@ std::vector<std::string> tokenize(const std::string& expression) {
     return tokens;
 }
 
-void processOperator(std::stack<std::shared_ptr<TreeNode>>& values, std::stack<std::shared_ptr<TreeNode>>& operators) {
+void BinaryTreeUtils::processOperator(std::stack<std::shared_ptr<TreeNode>>& values, std::stack<std::shared_ptr<TreeNode>>& operators) {
     auto op = operators.top();
     operators.pop();
 
@@ -36,7 +36,7 @@ void processOperator(std::stack<std::shared_ptr<TreeNode>>& values, std::stack<s
     values.push(op);
 }
 
-bool isNegativeNumber(const std::vector<std::string>& tokens, size_t index) {
+bool BinaryTreeUtils::isNegativeNumber(const std::vector<std::string>& tokens, size_t index) {
     return tokens[index] == "-" &&
         (index == 0 || tokens[index - 1] == "(" ||
             tokens[index - 1] == "+" || tokens[index - 1] == "-" ||

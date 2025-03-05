@@ -1,7 +1,10 @@
-﻿  TreeEvaluator.cpp
-  Generating code
-  0 of 1878 functions ( 0.0%) were compiled, the rest were copied from previous compilation.
-    0 functions were new in current compilation
-    0 functions had inline decision re-evaluated but remain unchanged
-  Finished generating code
-  BinaryTreeTests.vcxproj -> C:\Users\Marjan Hussain\source\repos\BinaryTree\x64\Release\BinaryTreeTests.exe
+﻿  BinaryTree.cpp
+  BinaryTreeUtils.cpp
+  CommandLine.cpp
+  TreeEvaluator.cpp
+  BuildTreeTests1.cpp
+  CommandLineTest1.cpp
+  EvaluateTreeTests1.cpp
+  main.cpp
+TreeEvaluator.obj : error LNK2001: unresolved external symbol "private: static int SanityCheck::CurrentDepth" (?CurrentDepth@SanityCheck@@0HA)
+C:\Users\Marjan Hussain\source\repos\BinaryTree\x64\Release\BinaryTreeTests.exe : fatal error LNK1120: 1 unresolved externals

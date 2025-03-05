@@ -19,10 +19,13 @@
     </ProjectConfiguration>
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="DllLoader.cpp" />
+    <ClCompile Include="SanityCheck.cpp" />
     <ClCompile Include="TreeEvaluator.cpp" />
     <ClInclude Include="BinaryTree.h" />
     <ClCompile Include="CommandLine.cpp" />
     <ClInclude Include="CommandLine.h" />
+    <ClInclude Include="DllLoader.h" />
     <ClInclude Include="FileManager.h" />
     <ClInclude Include="SanityCheck.h" />
     <ClInclude Include="TreeEvaluator.h" />

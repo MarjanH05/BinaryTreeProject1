@@ -1,4 +1,5 @@
-﻿  BinaryTree.cpp
-  BinaryTreeUtils.cpp
+﻿  DllLoader.cpp
+  FileManager.cpp
+  main.cpp
   Generating Code...
   BinaryTree.vcxproj -> C:\Users\Marjan Hussain\source\repos\BinaryTree\x64\Debug\BinaryTree.exe

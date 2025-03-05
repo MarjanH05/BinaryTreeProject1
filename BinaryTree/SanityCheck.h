@@ -4,7 +4,7 @@
 class SanityCheck {
 private:
     static int CurrentDepth;
-    static const int MaxDepth = 500;
+    enum { MaxDepth = 500 }; 
 
 public:
     SanityCheck() {
@@ -18,5 +18,3 @@ public:
         CurrentDepth--;
     }
 };
-
-int SanityCheck::CurrentDepth = 0;

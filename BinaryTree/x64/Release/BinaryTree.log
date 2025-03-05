@@ -1,7 +1,12 @@
-﻿  TreeEvaluator.cpp
+﻿  SanityCheck.cpp
+  TreeEvaluator.cpp
+  CommandLine.cpp
+  BinaryTree.cpp
+  BinaryTreeUtils.cpp
+  FileManager.cpp
+  main.cpp
   Generating code
-  0 of 1670 functions ( 0.0%) were compiled, the rest were copied from previous compilation.
-    0 functions were new in current compilation
-    0 functions had inline decision re-evaluated but remain unchanged
+  Previous IPDB not found, fall back to full compilation.
+  All 1670 functions were compiled because no usable IPDB/IOBJ from previous compilation was found.
   Finished generating code
   BinaryTree.vcxproj -> C:\Users\Marjan Hussain\source\repos\BinaryTree\x64\Release\BinaryTree.exe
