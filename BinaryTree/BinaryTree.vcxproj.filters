@@ -36,6 +36,9 @@
     <ClInclude Include="SanityCheck.h">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="DllLoader.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="main.cpp">
@@ -54,6 +57,12 @@
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="TreeEvaluator.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="SanityCheck.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="DllLoader.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>

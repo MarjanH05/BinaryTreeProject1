@@ -1,6 +1,9 @@
 C:\Users\Marjan Hussain\source\repos\BinaryTree\BinaryTree\BinaryTree.cpp;C:\Users\Marjan Hussain\source\repos\BinaryTree\BinaryTreeTests\x64\Debug\BinaryTree.obj
 C:\Users\Marjan Hussain\source\repos\BinaryTree\BinaryTree\BinaryTreeUtils.cpp;C:\Users\Marjan Hussain\source\repos\BinaryTree\BinaryTreeTests\x64\Debug\BinaryTreeUtils.obj
 C:\Users\Marjan Hussain\source\repos\BinaryTree\BinaryTree\CommandLine.cpp;C:\Users\Marjan Hussain\source\repos\BinaryTree\BinaryTreeTests\x64\Debug\CommandLine.obj
+C:\Users\Marjan Hussain\source\repos\BinaryTree\BinaryTree\DllLoader.cpp;C:\Users\Marjan Hussain\source\repos\BinaryTree\BinaryTreeTests\x64\Debug\DllLoader.obj
+C:\Users\Marjan Hussain\source\repos\BinaryTree\BinaryTree\SanityCheck.cpp;C:\Users\Marjan Hussain\source\repos\BinaryTree\BinaryTreeTests\x64\Debug\SanityCheck.obj
+C:\Users\Marjan Hussain\source\repos\BinaryTree\BinaryTree\TreeEvaluator.cpp;C:\Users\Marjan Hussain\source\repos\BinaryTree\BinaryTreeTests\x64\Debug\TreeEvaluator.obj
 C:\Users\Marjan Hussain\source\repos\BinaryTree\BinaryTreeTests\BuildTreeTests1.cpp;C:\Users\Marjan Hussain\source\repos\BinaryTree\BinaryTreeTests\x64\Debug\BuildTreeTests1.obj
 C:\Users\Marjan Hussain\source\repos\BinaryTree\BinaryTreeTests\CommandLineTest1.cpp;C:\Users\Marjan Hussain\source\repos\BinaryTree\BinaryTreeTests\x64\Debug\CommandLineTest1.obj
 C:\Users\Marjan Hussain\source\repos\BinaryTree\BinaryTreeTests\EvaluateTreeTests1.cpp;C:\Users\Marjan Hussain\source\repos\BinaryTree\BinaryTreeTests\x64\Debug\EvaluateTreeTests1.obj

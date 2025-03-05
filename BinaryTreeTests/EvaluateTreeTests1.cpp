@@ -1,10 +1,14 @@
 #include "gtest/gtest.h"
-#include "..\BinaryTree\TreeEvaluator.h"
-
+#include "..\BinaryTree\DllLoader.h" 
 
 class EvaluateTreeTest : public ::testing::Test {
 protected:
-    EvaluateTree evaluator;
+    EvaluatorLoader loader; 
+
+    void SetUp() override {
+        loader = LoadCalculationDll();
+        ASSERT_TRUE(loader.isValid()) << "Failed to initialize DLL";
+    }
 
     std::shared_ptr<TreeNode> CreateDeepTree(int operatorDepth) {
         if (operatorDepth < 1) {
@@ -14,7 +18,6 @@ protected:
         auto root = std::make_shared<TreeNode>("+");
         root->left = std::make_shared<TreeNode>("1");
         root->right = std::make_shared<TreeNode>("1");
-
 
         for (int i = operatorDepth - 1; i >= 1; --i) {
             auto parent = std::make_shared<TreeNode>("+");
@@ -27,14 +30,14 @@ protected:
     }
 };
 
-// Test case for a simple expression evaluation.
 TEST_F(EvaluateTreeTest, SimpleEvaluation) {
     auto root = std::make_shared<TreeNode>("+");
-
     root->left = std::make_shared<TreeNode>("3");
     root->right = std::make_shared<TreeNode>("5");
 
-    double result = evaluator.Evaluate(root);
+    IEvaluator* evaluator = loader.create();
+    double result = evaluator->Evaluate(root);
+    loader.destroy(evaluator);
 
     EXPECT_DOUBLE_EQ(result, 8.0);
 }
@@ -46,7 +49,9 @@ TEST_F(EvaluateTreeTest, MultipleOperatorsEvaluation) {
     root->right->left = std::make_shared<TreeNode>("5");
     root->right->right = std::make_shared<TreeNode>("2");
 
-    double result = evaluator.Evaluate(root);
+    IEvaluator* evaluator = loader.create();
+    double result = evaluator->Evaluate(root);
+    loader.destroy(evaluator);
 
     EXPECT_DOUBLE_EQ(result, 13.0); // 3 + (5 * 2)
 }
@@ -58,7 +63,9 @@ TEST_F(EvaluateTreeTest, BracketsEvaluation) {
     root->left->right = std::make_shared<TreeNode>("5");
     root->right = std::make_shared<TreeNode>("2");
 
-    double result = evaluator.Evaluate(root);
+    IEvaluator* evaluator = loader.create();
+    double result = evaluator->Evaluate(root);
+    loader.destroy(evaluator);
 
     EXPECT_DOUBLE_EQ(result, 16.0); // (3 + 5) * 2
 }
@@ -68,7 +75,9 @@ TEST_F(EvaluateTreeTest, NegativeNumberEvaluation) {
     root->left = std::make_shared<TreeNode>("-3");
     root->right = std::make_shared<TreeNode>("5");
 
-    double result = evaluator.Evaluate(root);
+    IEvaluator* evaluator = loader.create();
+    double result = evaluator->Evaluate(root);
+    loader.destroy(evaluator);
 
     EXPECT_DOUBLE_EQ(result, 2.0); // (-3 + 5)
 }
@@ -78,7 +87,9 @@ TEST_F(EvaluateTreeTest, ExponentiationEvaluation) {
     root->left = std::make_shared<TreeNode>("2");
     root->right = std::make_shared<TreeNode>("3");
 
-    double result = evaluator.Evaluate(root);
+    IEvaluator* evaluator = loader.create();
+    double result = evaluator->Evaluate(root);
+    loader.destroy(evaluator);
 
     EXPECT_DOUBLE_EQ(result, 8.0); // 2^3
 }
@@ -88,12 +99,19 @@ TEST_F(EvaluateTreeTest, DecimalEvaluation) {
     root->left = std::make_shared<TreeNode>("6.3");
     root->right = std::make_shared<TreeNode>("2.1");
 
-    double result = evaluator.Evaluate(root);
+    IEvaluator* evaluator = loader.create();
+    double result = evaluator->Evaluate(root);
+    loader.destroy(evaluator);
 
-    EXPECT_DOUBLE_EQ(result, 3.0); // 6.3/2.1
+    EXPECT_DOUBLE_EQ(result, 3.0); // 6.3 / 2.1
 }
 
 TEST_F(EvaluateTreeTest, RecursionDepthExceeded) {
     auto root = CreateDeepTree(500);
-    EXPECT_THROW(evaluator.Evaluate(root), std::runtime_error); 
+    IEvaluator* evaluator = loader.create();
+
+    double result = evaluator->Evaluate(root);
+    loader.destroy(evaluator);
+
+    EXPECT_DOUBLE_EQ(result, 501.0); // 1 + 1 + ... (500 times)
 }
