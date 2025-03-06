@@ -1,4 +1,2 @@
-﻿  DllLoader.cpp
-  EvaluateTreeTests1.cpp
-  Generating Code...
-  BinaryTreeTests.vcxproj -> C:\Users\Marjan Hussain\source\repos\BinaryTree\x64\Debug\BinaryTreeTests.exe
+﻿  LINK : C:\Users\Marjan Hussain\source\repos\BinaryTree\bin\Debug\BinaryTreeTests.exe not found or not built by the last incremental link; performing full link
+  BinaryTreeTests.vcxproj -> C:\Users\Marjan Hussain\source\repos\BinaryTree\bin\Debug\BinaryTreeTests.exe

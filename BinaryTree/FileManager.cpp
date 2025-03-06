@@ -54,5 +54,4 @@ void FileManager::CheckforErrors() {
         std::cerr << "Output file could not be opened" << std::endl;
         throw std::runtime_error("Output file is not open.");
     }
-    readFile(); 
 }
