@@ -67,11 +67,7 @@
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <Text Include="Backup.txt">
-      <Filter>Resource Files</Filter>
-    </Text>
     <Text Include="Notes.txt" />
-    <Text Include="Backup2.txt" />
     <Text Include="Paths.txt" />
   </ItemGroup>
   <ItemGroup>
