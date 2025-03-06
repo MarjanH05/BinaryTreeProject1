@@ -13,5 +13,5 @@ struct TreeNode {
 class IEvaluator {
 public:
     virtual double Evaluate(std::shared_ptr<TreeNode> node) = 0;
-    virtual ~IEvaluator() = default; // Virtual destructor for proper cleanup
+    virtual ~IEvaluator() = default;
 };

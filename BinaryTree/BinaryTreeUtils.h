@@ -16,4 +16,4 @@ namespace BinaryTreeUtils {
 
     bool isNegativeNumber(const std::vector<std::string>& tokens, size_t index);
 
-}  // namespace BinaryTreeUtils
+}

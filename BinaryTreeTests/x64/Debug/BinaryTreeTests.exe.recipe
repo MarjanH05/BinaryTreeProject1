@@ -2,10 +2,10 @@
 <Project>
   <ProjectOutputs>
     <ProjectOutput>
-      <FullPath>C:\Users\Marjan Hussain\source\repos\BinaryTree\x64\Debug\BinaryTree.exe</FullPath>
+      <FullPath>C:\Users\Marjan Hussain\source\repos\BinaryTree\bin\Debug\BinaryTree.exe</FullPath>
     </ProjectOutput>
     <ProjectOutput>
-      <FullPath>C:\Users\Marjan Hussain\source\repos\BinaryTree\x64\Debug\BinaryTreeTests.exe</FullPath>
+      <FullPath>C:\Users\Marjan Hussain\source\repos\BinaryTree\bin\Debug\BinaryTreeTests.exe</FullPath>
     </ProjectOutput>
   </ProjectOutputs>
   <ContentFiles />

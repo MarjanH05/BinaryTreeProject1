@@ -33,7 +33,7 @@ void Tree::buildTree(const std::string& expression) {
             while (!operators.empty() && operators.top()->value != "(") {
                 BinaryTreeUtils::processOperator(values, operators);
             }
-            operators.pop(); // Pop the "("
+            operators.pop();
         }
     }
 

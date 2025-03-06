@@ -1,5 +1,2 @@
-﻿  DllLoader.cpp
-  FileManager.cpp
-  main.cpp
-  Generating Code...
-  BinaryTree.vcxproj -> C:\Users\Marjan Hussain\source\repos\BinaryTree\x64\Debug\BinaryTree.exe
+﻿  LINK : C:\Users\Marjan Hussain\source\repos\BinaryTree\bin\Debug\BinaryTree.exe not found or not built by the last incremental link; performing full link
+  BinaryTree.vcxproj -> C:\Users\Marjan Hussain\source\repos\BinaryTree\bin\Debug\BinaryTree.exe
