@@ -1,0 +1,304 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Machine>C115</Machine>
+    <WindowsUser>Marjan Hussain</WindowsUser>
+    <TargetPlatformIdentifier>UAP</TargetPlatformIdentifier>
+    <TargetOsVersion>10.0</TargetOsVersion>
+    <TargetOsDescription>Windows 10.0</TargetOsDescription>
+    <SolutionConfiguration>Debug|x64</SolutionConfiguration>
+    <PackageArchitecture>x64</PackageArchitecture>
+    <PackageIdentityName>e4d1b83a-5ba9-4727-afbd-be9637f25e03</PackageIdentityName>
+    <PackageIdentityPublisher>CN=Marjan Hussain</PackageIdentityPublisher>
+    <IntermediateOutputPath>C:\Users\Marjan Hussain\source\repos\BinaryTree\BinaryTreeGUI\x64\Debug\</IntermediateOutputPath>
+    <RemoteDeploymentType>CopyToDevice</RemoteDeploymentType>
+    <PackageRegistrationPath></PackageRegistrationPath>
+    <RemoveNonLayoutFiles>false</RemoveNonLayoutFiles>
+    <DeployOptionalPackages>false</DeployOptionalPackages>
+    <WindowsSdkPath>C:\Program Files %28x86%29\Windows Kits\10\</WindowsSdkPath>
+    <LayoutDir>C:\Users\Marjan Hussain\source\repos\BinaryTree\bin\Debug\AppX</LayoutDir>
+  </PropertyGroup>
+  <ItemGroup>
+    <AppXManifest Include="C:\Users\Marjan Hussain\source\repos\BinaryTree\bin\Debug\AppxManifest.xml">
+      <PackagePath>AppxManifest.xml</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppXManifest>
+  </ItemGroup>
+  <ItemGroup>
+    <AppxPackagedFile Include="C:\Users\Marjan Hussain\source\repos\BinaryTree\bin\Debug\resources.pri">
+      <PackagePath>resources.pri</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Marjan Hussain\source\repos\BinaryTree\bin\Debug\BinaryTreeGUI.exe">
+      <PackagePath>BinaryTreeGUI.exe</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Marjan Hussain\source\repos\BinaryTree\packages\Microsoft.WindowsAppSDK.1.5.240311000\build\..\runtimes\win10-x64\native\Microsoft.WindowsAppRuntime.Bootstrap.dll">
+      <PackagePath>Microsoft.WindowsAppRuntime.Bootstrap.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Marjan Hussain\source\repos\BinaryTree\bin\Debug\BinaryTreeCalculationDLL.dll">
+      <PackagePath>BinaryTreeCalculationDLL.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Marjan Hussain\Pictures\ComputairLogo.PNG">
+      <PackagePath>ComputairLogo.PNG</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Marjan Hussain\source\repos\BinaryTree\BinaryTreeGUI\Assets\LargeTile.scale-100.png">
+      <PackagePath>Assets\LargeTile.scale-100.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Marjan Hussain\source\repos\BinaryTree\BinaryTreeGUI\Assets\LargeTile.scale-125.png">
+      <PackagePath>Assets\LargeTile.scale-125.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Marjan Hussain\source\repos\BinaryTree\BinaryTreeGUI\Assets\LargeTile.scale-150.png">
+      <PackagePath>Assets\LargeTile.scale-150.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Marjan Hussain\source\repos\BinaryTree\BinaryTreeGUI\Assets\LargeTile.scale-200.png">
+      <PackagePath>Assets\LargeTile.scale-200.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Marjan Hussain\source\repos\BinaryTree\BinaryTreeGUI\Assets\LargeTile.scale-400.png">
+      <PackagePath>Assets\LargeTile.scale-400.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Marjan Hussain\source\repos\BinaryTree\BinaryTreeGUI\Assets\LockScreenLogo.scale-200.png">
+      <PackagePath>Assets\LockScreenLogo.scale-200.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Marjan Hussain\source\repos\BinaryTree\BinaryTreeGUI\Assets\menu_one.ico">
+      <PackagePath>Assets\menu_one.ico</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Marjan Hussain\source\repos\BinaryTree\BinaryTreeGUI\Assets\SmallTile.scale-100.png">
+      <PackagePath>Assets\SmallTile.scale-100.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Marjan Hussain\source\repos\BinaryTree\BinaryTreeGUI\Assets\SmallTile.scale-125.png">
+      <PackagePath>Assets\SmallTile.scale-125.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Marjan Hussain\source\repos\BinaryTree\BinaryTreeGUI\Assets\SmallTile.scale-150.png">
+      <PackagePath>Assets\SmallTile.scale-150.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Marjan Hussain\source\repos\BinaryTree\BinaryTreeGUI\Assets\SmallTile.scale-200.png">
+      <PackagePath>Assets\SmallTile.scale-200.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Marjan Hussain\source\repos\BinaryTree\BinaryTreeGUI\Assets\SmallTile.scale-400.png">
+      <PackagePath>Assets\SmallTile.scale-400.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Marjan Hussain\source\repos\BinaryTree\BinaryTreeGUI\Assets\SplashScreen.scale-100.png">
+      <PackagePath>Assets\SplashScreen.scale-100.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Marjan Hussain\source\repos\BinaryTree\BinaryTreeGUI\Assets\SplashScreen.scale-125.png">
+      <PackagePath>Assets\SplashScreen.scale-125.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Marjan Hussain\source\repos\BinaryTree\BinaryTreeGUI\Assets\SplashScreen.scale-150.png">
+      <PackagePath>Assets\SplashScreen.scale-150.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Marjan Hussain\source\repos\BinaryTree\BinaryTreeGUI\Assets\SplashScreen.scale-200.png">
+      <PackagePath>Assets\SplashScreen.scale-200.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Marjan Hussain\source\repos\BinaryTree\BinaryTreeGUI\Assets\SplashScreen.scale-400.png">
+      <PackagePath>Assets\SplashScreen.scale-400.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Marjan Hussain\source\repos\BinaryTree\BinaryTreeGUI\Assets\Square150x150Logo.scale-100.png">
+      <PackagePath>Assets\Square150x150Logo.scale-100.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Marjan Hussain\source\repos\BinaryTree\BinaryTreeGUI\Assets\Square150x150Logo.scale-125.png">
+      <PackagePath>Assets\Square150x150Logo.scale-125.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Marjan Hussain\source\repos\BinaryTree\BinaryTreeGUI\Assets\Square150x150Logo.scale-150.png">
+      <PackagePath>Assets\Square150x150Logo.scale-150.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Marjan Hussain\source\repos\BinaryTree\BinaryTreeGUI\Assets\Square150x150Logo.scale-200.png">
+      <PackagePath>Assets\Square150x150Logo.scale-200.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Marjan Hussain\source\repos\BinaryTree\BinaryTreeGUI\Assets\Square150x150Logo.scale-400.png">
+      <PackagePath>Assets\Square150x150Logo.scale-400.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Marjan Hussain\source\repos\BinaryTree\BinaryTreeGUI\Assets\Square44x44Logo.altform-lightunplated_targetsize-16.png">
+      <PackagePath>Assets\Square44x44Logo.altform-lightunplated_targetsize-16.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Marjan Hussain\source\repos\BinaryTree\BinaryTreeGUI\Assets\Square44x44Logo.altform-lightunplated_targetsize-24.png">
+      <PackagePath>Assets\Square44x44Logo.altform-lightunplated_targetsize-24.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Marjan Hussain\source\repos\BinaryTree\BinaryTreeGUI\Assets\Square44x44Logo.altform-lightunplated_targetsize-256.png">
+      <PackagePath>Assets\Square44x44Logo.altform-lightunplated_targetsize-256.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Marjan Hussain\source\repos\BinaryTree\BinaryTreeGUI\Assets\Square44x44Logo.altform-lightunplated_targetsize-32.png">
+      <PackagePath>Assets\Square44x44Logo.altform-lightunplated_targetsize-32.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Marjan Hussain\source\repos\BinaryTree\BinaryTreeGUI\Assets\Square44x44Logo.altform-lightunplated_targetsize-48.png">
+      <PackagePath>Assets\Square44x44Logo.altform-lightunplated_targetsize-48.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Marjan Hussain\source\repos\BinaryTree\BinaryTreeGUI\Assets\Square44x44Logo.altform-unplated_targetsize-16.png">
+      <PackagePath>Assets\Square44x44Logo.altform-unplated_targetsize-16.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Marjan Hussain\source\repos\BinaryTree\BinaryTreeGUI\Assets\Square44x44Logo.altform-unplated_targetsize-256.png">
+      <PackagePath>Assets\Square44x44Logo.altform-unplated_targetsize-256.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Marjan Hussain\source\repos\BinaryTree\BinaryTreeGUI\Assets\Square44x44Logo.altform-unplated_targetsize-32.png">
+      <PackagePath>Assets\Square44x44Logo.altform-unplated_targetsize-32.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Marjan Hussain\source\repos\BinaryTree\BinaryTreeGUI\Assets\Square44x44Logo.altform-unplated_targetsize-48.png">
+      <PackagePath>Assets\Square44x44Logo.altform-unplated_targetsize-48.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Marjan Hussain\source\repos\BinaryTree\BinaryTreeGUI\Assets\Square44x44Logo.scale-100.png">
+      <PackagePath>Assets\Square44x44Logo.scale-100.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Marjan Hussain\source\repos\BinaryTree\BinaryTreeGUI\Assets\Square44x44Logo.scale-125.png">
+      <PackagePath>Assets\Square44x44Logo.scale-125.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Marjan Hussain\source\repos\BinaryTree\BinaryTreeGUI\Assets\Square44x44Logo.scale-150.png">
+      <PackagePath>Assets\Square44x44Logo.scale-150.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Marjan Hussain\source\repos\BinaryTree\BinaryTreeGUI\Assets\Square44x44Logo.scale-200.png">
+      <PackagePath>Assets\Square44x44Logo.scale-200.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Marjan Hussain\source\repos\BinaryTree\BinaryTreeGUI\Assets\Square44x44Logo.scale-400.png">
+      <PackagePath>Assets\Square44x44Logo.scale-400.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Marjan Hussain\source\repos\BinaryTree\BinaryTreeGUI\Assets\Square44x44Logo.targetsize-16.png">
+      <PackagePath>Assets\Square44x44Logo.targetsize-16.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Marjan Hussain\source\repos\BinaryTree\BinaryTreeGUI\Assets\Square44x44Logo.targetsize-24.png">
+      <PackagePath>Assets\Square44x44Logo.targetsize-24.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Marjan Hussain\source\repos\BinaryTree\BinaryTreeGUI\Assets\Square44x44Logo.targetsize-24_altform-unplated.png">
+      <PackagePath>Assets\Square44x44Logo.targetsize-24_altform-unplated.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Marjan Hussain\source\repos\BinaryTree\BinaryTreeGUI\Assets\Square44x44Logo.targetsize-256.png">
+      <PackagePath>Assets\Square44x44Logo.targetsize-256.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Marjan Hussain\source\repos\BinaryTree\BinaryTreeGUI\Assets\Square44x44Logo.targetsize-32.png">
+      <PackagePath>Assets\Square44x44Logo.targetsize-32.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Marjan Hussain\source\repos\BinaryTree\BinaryTreeGUI\Assets\Square44x44Logo.targetsize-48.png">
+      <PackagePath>Assets\Square44x44Logo.targetsize-48.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Marjan Hussain\source\repos\BinaryTree\BinaryTreeGUI\Assets\StoreLogo.scale-100.png">
+      <PackagePath>Assets\StoreLogo.scale-100.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Marjan Hussain\source\repos\BinaryTree\BinaryTreeGUI\Assets\StoreLogo.scale-125.png">
+      <PackagePath>Assets\StoreLogo.scale-125.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Marjan Hussain\source\repos\BinaryTree\BinaryTreeGUI\Assets\StoreLogo.scale-150.png">
+      <PackagePath>Assets\StoreLogo.scale-150.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Marjan Hussain\source\repos\BinaryTree\BinaryTreeGUI\Assets\StoreLogo.scale-200.png">
+      <PackagePath>Assets\StoreLogo.scale-200.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Marjan Hussain\source\repos\BinaryTree\BinaryTreeGUI\Assets\StoreLogo.scale-400.png">
+      <PackagePath>Assets\StoreLogo.scale-400.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Marjan Hussain\source\repos\BinaryTree\BinaryTreeGUI\Assets\Wide310x150Logo.scale-100.png">
+      <PackagePath>Assets\Wide310x150Logo.scale-100.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Marjan Hussain\source\repos\BinaryTree\BinaryTreeGUI\Assets\Wide310x150Logo.scale-125.png">
+      <PackagePath>Assets\Wide310x150Logo.scale-125.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Marjan Hussain\source\repos\BinaryTree\BinaryTreeGUI\Assets\Wide310x150Logo.scale-150.png">
+      <PackagePath>Assets\Wide310x150Logo.scale-150.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Marjan Hussain\source\repos\BinaryTree\BinaryTreeGUI\Assets\Wide310x150Logo.scale-200.png">
+      <PackagePath>Assets\Wide310x150Logo.scale-200.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Marjan Hussain\source\repos\BinaryTree\BinaryTreeGUI\Assets\Wide310x150Logo.scale-400.png">
+      <PackagePath>Assets\Wide310x150Logo.scale-400.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Marjan Hussain\source\repos\BinaryTree\bin\Debug\BinaryTreeGUI.winmd">
+      <PackagePath>BinaryTreeGUI.winmd</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Program Files %28x86%29\Microsoft SDKs\Windows Kits\10\ExtensionSDKs\Microsoft.UniversalCRT.Debug\10.0.22621.0\Redist\Debug\x64\ucrtbased.dll">
+      <PackagePath>ucrtbased.dll</PackagePath>
+    </AppxPackagedFile>
+  </ItemGroup>
+  <ItemGroup>
+    <ResolvedSDKReference Include="C:\Users\Marjan Hussain\source\repos\BinaryTree\packages\Microsoft.WindowsAppSDK.1.5.240311000\build\..\tools\MSIX\win10-x86\Microsoft.WindowsAppRuntime.1.5.msix">
+      <Name>Microsoft.WindowsAppRuntime.1.5</Name>
+      <Version>5001.70.1338.0</Version>
+      <Architecture>x86</Architecture>
+      <FrameworkIdentity>Name = Microsoft.WindowsAppRuntime.1.5, MinVersion = 5001.70.1338.0, Publisher = %27CN=Microsoft Corporation, O=Microsoft Corporation, L=Redmond, S=Washington, C=US%27</FrameworkIdentity>
+      <AppxLocation>C:\Users\Marjan Hussain\source\repos\BinaryTree\packages\Microsoft.WindowsAppSDK.1.5.240311000\build\..\tools\MSIX\win10-x86\Microsoft.WindowsAppRuntime.1.5.msix</AppxLocation>
+      <MoreInfo></MoreInfo>
+    </ResolvedSDKReference>
+    <ResolvedSDKReference Include="C:\Users\Marjan Hussain\source\repos\BinaryTree\packages\Microsoft.WindowsAppSDK.1.5.240311000\build\..\tools\MSIX\win10-x86\Microsoft.WindowsAppRuntime.1.5.msix">
+      <Name>Microsoft.WindowsAppRuntime.1.5</Name>
+      <Version>5001.70.1338.0</Version>
+      <Architecture>win32</Architecture>
+      <FrameworkIdentity>Name = Microsoft.WindowsAppRuntime.1.5, MinVersion = 5001.70.1338.0, Publisher = %27CN=Microsoft Corporation, O=Microsoft Corporation, L=Redmond, S=Washington, C=US%27</FrameworkIdentity>
+      <AppxLocation>C:\Users\Marjan Hussain\source\repos\BinaryTree\packages\Microsoft.WindowsAppSDK.1.5.240311000\build\..\tools\MSIX\win10-x86\Microsoft.WindowsAppRuntime.1.5.msix</AppxLocation>
+      <MoreInfo></MoreInfo>
+    </ResolvedSDKReference>
+    <ResolvedSDKReference Include="C:\Users\Marjan Hussain\source\repos\BinaryTree\packages\Microsoft.WindowsAppSDK.1.5.240311000\build\..\tools\MSIX\win10-x64\Microsoft.WindowsAppRuntime.1.5.msix">
+      <Name>Microsoft.WindowsAppRuntime.1.5</Name>
+      <Version>5001.70.1338.0</Version>
+      <Architecture>x64</Architecture>
+      <FrameworkIdentity>Name = Microsoft.WindowsAppRuntime.1.5, MinVersion = 5001.70.1338.0, Publisher = %27CN=Microsoft Corporation, O=Microsoft Corporation, L=Redmond, S=Washington, C=US%27</FrameworkIdentity>
+      <AppxLocation>C:\Users\Marjan Hussain\source\repos\BinaryTree\packages\Microsoft.WindowsAppSDK.1.5.240311000\build\..\tools\MSIX\win10-x64\Microsoft.WindowsAppRuntime.1.5.msix</AppxLocation>
+      <MoreInfo></MoreInfo>
+    </ResolvedSDKReference>
+    <ResolvedSDKReference Include="C:\Users\Marjan Hussain\source\repos\BinaryTree\packages\Microsoft.WindowsAppSDK.1.5.240311000\build\..\tools\MSIX\win10-arm64\Microsoft.WindowsAppRuntime.1.5.msix">
+      <Name>Microsoft.WindowsAppRuntime.1.5</Name>
+      <Version>5001.70.1338.0</Version>
+      <Architecture>arm64</Architecture>
+      <FrameworkIdentity>Name = Microsoft.WindowsAppRuntime.1.5, MinVersion = 5001.70.1338.0, Publisher = %27CN=Microsoft Corporation, O=Microsoft Corporation, L=Redmond, S=Washington, C=US%27</FrameworkIdentity>
+      <AppxLocation>C:\Users\Marjan Hussain\source\repos\BinaryTree\packages\Microsoft.WindowsAppSDK.1.5.240311000\build\..\tools\MSIX\win10-arm64\Microsoft.WindowsAppRuntime.1.5.msix</AppxLocation>
+      <MoreInfo></MoreInfo>
+    </ResolvedSDKReference>
+    <ResolvedSDKReference Include="C:\Program Files %28x86%29\Microsoft SDKs\Windows Kits\10\ExtensionSDKs\Microsoft.VCLibs\14.0\">
+      <Name>Microsoft.VCLibs.140.00.Debug</Name>
+      <Version>14.0.33519.0</Version>
+      <Architecture>ARM</Architecture>
+      <FrameworkIdentity>Name = Microsoft.VCLibs.140.00.Debug, MinVersion = 14.0.33519.0, Publisher = %27CN=Microsoft Corporation, O=Microsoft Corporation, L=Redmond, S=Washington, C=US%27</FrameworkIdentity>
+      <AppxLocation>C:\Program Files %28x86%29\Microsoft SDKs\Windows Kits\10\ExtensionSDKs\Microsoft.VCLibs\14.0\.\AppX\Debug\ARM\Microsoft.VCLibs.ARM.Debug.14.00.appx</AppxLocation>
+      <MoreInfo></MoreInfo>
+    </ResolvedSDKReference>
+    <ResolvedSDKReference Include="C:\Program Files %28x86%29\Microsoft SDKs\Windows Kits\10\ExtensionSDKs\Microsoft.VCLibs\14.0\">
+      <Name>Microsoft.VCLibs.140.00.Debug</Name>
+      <Version>14.0.33519.0</Version>
+      <Architecture>ARM64</Architecture>
+      <FrameworkIdentity>Name = Microsoft.VCLibs.140.00.Debug, MinVersion = 14.0.33519.0, Publisher = %27CN=Microsoft Corporation, O=Microsoft Corporation, L=Redmond, S=Washington, C=US%27</FrameworkIdentity>
+      <AppxLocation>C:\Program Files %28x86%29\Microsoft SDKs\Windows Kits\10\ExtensionSDKs\Microsoft.VCLibs\14.0\.\AppX\Debug\ARM64\Microsoft.VCLibs.ARM64.Debug.14.00.appx</AppxLocation>
+      <MoreInfo></MoreInfo>
+    </ResolvedSDKReference>
+    <ResolvedSDKReference Include="C:\Program Files %28x86%29\Microsoft SDKs\Windows Kits\10\ExtensionSDKs\Microsoft.VCLibs\14.0\">
+      <Name>Microsoft.VCLibs.140.00.Debug</Name>
+      <Version>14.0.33519.0</Version>
+      <Architecture>x64</Architecture>
+      <FrameworkIdentity>Name = Microsoft.VCLibs.140.00.Debug, MinVersion = 14.0.33519.0, Publisher = %27CN=Microsoft Corporation, O=Microsoft Corporation, L=Redmond, S=Washington, C=US%27</FrameworkIdentity>
+      <AppxLocation>C:\Program Files %28x86%29\Microsoft SDKs\Windows Kits\10\ExtensionSDKs\Microsoft.VCLibs\14.0\.\AppX\Debug\x64\Microsoft.VCLibs.x64.Debug.14.00.appx</AppxLocation>
+      <MoreInfo></MoreInfo>
+    </ResolvedSDKReference>
+    <ResolvedSDKReference Include="C:\Program Files %28x86%29\Microsoft SDKs\Windows Kits\10\ExtensionSDKs\Microsoft.VCLibs\14.0\">
+      <Name>Microsoft.VCLibs.140.00.Debug</Name>
+      <Version>14.0.33519.0</Version>
+      <Architecture>x86</Architecture>
+      <FrameworkIdentity>Name = Microsoft.VCLibs.140.00.Debug, MinVersion = 14.0.33519.0, Publisher = %27CN=Microsoft Corporation, O=Microsoft Corporation, L=Redmond, S=Washington, C=US%27</FrameworkIdentity>
+      <AppxLocation>C:\Program Files %28x86%29\Microsoft SDKs\Windows Kits\10\ExtensionSDKs\Microsoft.VCLibs\14.0\.\AppX\Debug\x86\Microsoft.VCLibs.x86.Debug.14.00.appx</AppxLocation>
+      <MoreInfo></MoreInfo>
+    </ResolvedSDKReference>
+    <ResolvedSDKReference Include="C:\Program Files %28x86%29\Microsoft SDKs\Windows Kits\10\ExtensionSDKs\Microsoft.VCLibs.Desktop\14.0\">
+      <Name>Microsoft.VCLibs.140.00.Debug.UWPDesktop</Name>
+      <Version>14.0.33728.0</Version>
+      <Architecture>ARM</Architecture>
+      <FrameworkIdentity>Name = Microsoft.VCLibs.140.00.Debug.UWPDesktop, MinVersion = 14.0.33728.0, Publisher = %27CN=Microsoft Corporation, O=Microsoft Corporation, L=Redmond, S=Washington, C=US%27</FrameworkIdentity>
+      <AppxLocation>C:\Program Files %28x86%29\Microsoft SDKs\Windows Kits\10\ExtensionSDKs\Microsoft.VCLibs.Desktop\14.0\.\AppX\Debug\ARM\Microsoft.VCLibs.ARM.Debug.14.00.Desktop.appx</AppxLocation>
+      <MoreInfo></MoreInfo>
+    </ResolvedSDKReference>
+    <ResolvedSDKReference Include="C:\Program Files %28x86%29\Microsoft SDKs\Windows Kits\10\ExtensionSDKs\Microsoft.VCLibs.Desktop\14.0\">
+      <Name>Microsoft.VCLibs.140.00.Debug.UWPDesktop</Name>
+      <Version>14.0.33728.0</Version>
+      <Architecture>ARM64</Architecture>
+      <FrameworkIdentity>Name = Microsoft.VCLibs.140.00.Debug.UWPDesktop, MinVersion = 14.0.33728.0, Publisher = %27CN=Microsoft Corporation, O=Microsoft Corporation, L=Redmond, S=Washington, C=US%27</FrameworkIdentity>
+      <AppxLocation>C:\Program Files %28x86%29\Microsoft SDKs\Windows Kits\10\ExtensionSDKs\Microsoft.VCLibs.Desktop\14.0\.\AppX\Debug\ARM64\Microsoft.VCLibs.ARM64.Debug.14.00.Desktop.appx</AppxLocation>
+      <MoreInfo></MoreInfo>
+    </ResolvedSDKReference>
+    <ResolvedSDKReference Include="C:\Program Files %28x86%29\Microsoft SDKs\Windows Kits\10\ExtensionSDKs\Microsoft.VCLibs.Desktop\14.0\">
+      <Name>Microsoft.VCLibs.140.00.Debug.UWPDesktop</Name>
+      <Version>14.0.33728.0</Version>
+      <Architecture>x64</Architecture>
+      <FrameworkIdentity>Name = Microsoft.VCLibs.140.00.Debug.UWPDesktop, MinVersion = 14.0.33728.0, Publisher = %27CN=Microsoft Corporation, O=Microsoft Corporation, L=Redmond, S=Washington, C=US%27</FrameworkIdentity>
+      <AppxLocation>C:\Program Files %28x86%29\Microsoft SDKs\Windows Kits\10\ExtensionSDKs\Microsoft.VCLibs.Desktop\14.0\.\AppX\Debug\x64\Microsoft.VCLibs.x64.Debug.14.00.Desktop.appx</AppxLocation>
+      <MoreInfo></MoreInfo>
+    </ResolvedSDKReference>
+    <ResolvedSDKReference Include="C:\Program Files %28x86%29\Microsoft SDKs\Windows Kits\10\ExtensionSDKs\Microsoft.VCLibs.Desktop\14.0\">
+      <Name>Microsoft.VCLibs.140.00.Debug.UWPDesktop</Name>
+      <Version>14.0.33728.0</Version>
+      <Architecture>x86</Architecture>
+      <FrameworkIdentity>Name = Microsoft.VCLibs.140.00.Debug.UWPDesktop, MinVersion = 14.0.33728.0, Publisher = %27CN=Microsoft Corporation, O=Microsoft Corporation, L=Redmond, S=Washington, C=US%27</FrameworkIdentity>
+      <AppxLocation>C:\Program Files %28x86%29\Microsoft SDKs\Windows Kits\10\ExtensionSDKs\Microsoft.VCLibs.Desktop\14.0\.\AppX\Debug\x86\Microsoft.VCLibs.x86.Debug.14.00.Desktop.appx</AppxLocation>
+      <MoreInfo></MoreInfo>
+    </ResolvedSDKReference>
+  </ItemGroup>
+</Project>

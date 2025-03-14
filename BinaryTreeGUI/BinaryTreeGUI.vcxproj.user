@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="Current" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Source>C:\Users\Marjan Hussain\Pictures\binary-tree-to-DLL.png</Source>
+    <SmallTileSource>C:\Users\Marjan Hussain\Pictures\binary-tree-to-DLL.png</SmallTileSource>
+    <MediumTileSource>C:\Users\Marjan Hussain\Pictures\binary-tree-to-DLL.png</MediumTileSource>
+    <WideTileSource>C:\Users\Marjan Hussain\Pictures\binary-tree-to-DLL.png</WideTileSource>
+    <LargeTileSource>C:\Users\Marjan Hussain\Pictures\binary-tree-to-DLL.png</LargeTileSource>
+    <AppIconSource>C:\Users\Marjan Hussain\Pictures\binary-tree-to-DLL.png</AppIconSource>
+    <SplashScreenSource>C:\Users\Marjan Hussain\Pictures\binary-tree-to-DLL.png</SplashScreenSource>
+    <PackageLogoSource>C:\Users\Marjan Hussain\Pictures\binary-tree-to-DLL.png</PackageLogoSource>
+  </PropertyGroup>
+</Project>

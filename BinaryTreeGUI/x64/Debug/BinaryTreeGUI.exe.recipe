@@ -1,0 +1,171 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project>
+  <ProjectOutputs>
+    <ProjectOutput>
+      <FullPath>C:\Users\Marjan Hussain\source\repos\BinaryTree\bin\Debug\BinaryTreeGUI.exe</FullPath>
+    </ProjectOutput>
+  </ProjectOutputs>
+  <ContentFiles>
+    <ContentFile>
+      <FullPath>C:\Users\Marjan Hussain\Pictures\ComputairLogo.PNG</FullPath>
+    </ContentFile>
+    <ContentFile>
+      <FullPath>C:\Users\Marjan Hussain\source\repos\BinaryTree\BinaryTreeGUI\Assets\LargeTile.scale-100.png</FullPath>
+    </ContentFile>
+    <ContentFile>
+      <FullPath>C:\Users\Marjan Hussain\source\repos\BinaryTree\BinaryTreeGUI\Assets\LargeTile.scale-125.png</FullPath>
+    </ContentFile>
+    <ContentFile>
+      <FullPath>C:\Users\Marjan Hussain\source\repos\BinaryTree\BinaryTreeGUI\Assets\LargeTile.scale-150.png</FullPath>
+    </ContentFile>
+    <ContentFile>
+      <FullPath>C:\Users\Marjan Hussain\source\repos\BinaryTree\BinaryTreeGUI\Assets\LargeTile.scale-200.png</FullPath>
+    </ContentFile>
+    <ContentFile>
+      <FullPath>C:\Users\Marjan Hussain\source\repos\BinaryTree\BinaryTreeGUI\Assets\LargeTile.scale-400.png</FullPath>
+    </ContentFile>
+    <ContentFile>
+      <FullPath>C:\Users\Marjan Hussain\source\repos\BinaryTree\BinaryTreeGUI\Assets\LockScreenLogo.scale-200.png</FullPath>
+    </ContentFile>
+    <ContentFile>
+      <FullPath>C:\Users\Marjan Hussain\source\repos\BinaryTree\BinaryTreeGUI\Assets\menu_one.ico</FullPath>
+    </ContentFile>
+    <ContentFile>
+      <FullPath>C:\Users\Marjan Hussain\source\repos\BinaryTree\BinaryTreeGUI\Assets\SmallTile.scale-100.png</FullPath>
+    </ContentFile>
+    <ContentFile>
+      <FullPath>C:\Users\Marjan Hussain\source\repos\BinaryTree\BinaryTreeGUI\Assets\SmallTile.scale-125.png</FullPath>
+    </ContentFile>
+    <ContentFile>
+      <FullPath>C:\Users\Marjan Hussain\source\repos\BinaryTree\BinaryTreeGUI\Assets\SmallTile.scale-150.png</FullPath>
+    </ContentFile>
+    <ContentFile>
+      <FullPath>C:\Users\Marjan Hussain\source\repos\BinaryTree\BinaryTreeGUI\Assets\SmallTile.scale-200.png</FullPath>
+    </ContentFile>
+    <ContentFile>
+      <FullPath>C:\Users\Marjan Hussain\source\repos\BinaryTree\BinaryTreeGUI\Assets\SmallTile.scale-400.png</FullPath>
+    </ContentFile>
+    <ContentFile>
+      <FullPath>C:\Users\Marjan Hussain\source\repos\BinaryTree\BinaryTreeGUI\Assets\SplashScreen.scale-100.png</FullPath>
+    </ContentFile>
+    <ContentFile>
+      <FullPath>C:\Users\Marjan Hussain\source\repos\BinaryTree\BinaryTreeGUI\Assets\SplashScreen.scale-125.png</FullPath>
+    </ContentFile>
+    <ContentFile>
+      <FullPath>C:\Users\Marjan Hussain\source\repos\BinaryTree\BinaryTreeGUI\Assets\SplashScreen.scale-150.png</FullPath>
+    </ContentFile>
+    <ContentFile>
+      <FullPath>C:\Users\Marjan Hussain\source\repos\BinaryTree\BinaryTreeGUI\Assets\SplashScreen.scale-200.png</FullPath>
+    </ContentFile>
+    <ContentFile>
+      <FullPath>C:\Users\Marjan Hussain\source\repos\BinaryTree\BinaryTreeGUI\Assets\SplashScreen.scale-400.png</FullPath>
+    </ContentFile>
+    <ContentFile>
+      <FullPath>C:\Users\Marjan Hussain\source\repos\BinaryTree\BinaryTreeGUI\Assets\Square150x150Logo.scale-100.png</FullPath>
+    </ContentFile>
+    <ContentFile>
+      <FullPath>C:\Users\Marjan Hussain\source\repos\BinaryTree\BinaryTreeGUI\Assets\Square150x150Logo.scale-125.png</FullPath>
+    </ContentFile>
+    <ContentFile>
+      <FullPath>C:\Users\Marjan Hussain\source\repos\BinaryTree\BinaryTreeGUI\Assets\Square150x150Logo.scale-150.png</FullPath>
+    </ContentFile>
+    <ContentFile>
+      <FullPath>C:\Users\Marjan Hussain\source\repos\BinaryTree\BinaryTreeGUI\Assets\Square150x150Logo.scale-200.png</FullPath>
+    </ContentFile>
+    <ContentFile>
+      <FullPath>C:\Users\Marjan Hussain\source\repos\BinaryTree\BinaryTreeGUI\Assets\Square150x150Logo.scale-400.png</FullPath>
+    </ContentFile>
+    <ContentFile>
+      <FullPath>C:\Users\Marjan Hussain\source\repos\BinaryTree\BinaryTreeGUI\Assets\Square44x44Logo.altform-lightunplated_targetsize-16.png</FullPath>
+    </ContentFile>
+    <ContentFile>
+      <FullPath>C:\Users\Marjan Hussain\source\repos\BinaryTree\BinaryTreeGUI\Assets\Square44x44Logo.altform-lightunplated_targetsize-24.png</FullPath>
+    </ContentFile>
+    <ContentFile>
+      <FullPath>C:\Users\Marjan Hussain\source\repos\BinaryTree\BinaryTreeGUI\Assets\Square44x44Logo.altform-lightunplated_targetsize-256.png</FullPath>
+    </ContentFile>
+    <ContentFile>
+      <FullPath>C:\Users\Marjan Hussain\source\repos\BinaryTree\BinaryTreeGUI\Assets\Square44x44Logo.altform-lightunplated_targetsize-32.png</FullPath>
+    </ContentFile>
+    <ContentFile>
+      <FullPath>C:\Users\Marjan Hussain\source\repos\BinaryTree\BinaryTreeGUI\Assets\Square44x44Logo.altform-lightunplated_targetsize-48.png</FullPath>
+    </ContentFile>
+    <ContentFile>
+      <FullPath>C:\Users\Marjan Hussain\source\repos\BinaryTree\BinaryTreeGUI\Assets\Square44x44Logo.altform-unplated_targetsize-16.png</FullPath>
+    </ContentFile>
+    <ContentFile>
+      <FullPath>C:\Users\Marjan Hussain\source\repos\BinaryTree\BinaryTreeGUI\Assets\Square44x44Logo.altform-unplated_targetsize-256.png</FullPath>
+    </ContentFile>
+    <ContentFile>
+      <FullPath>C:\Users\Marjan Hussain\source\repos\BinaryTree\BinaryTreeGUI\Assets\Square44x44Logo.altform-unplated_targetsize-32.png</FullPath>
+    </ContentFile>
+    <ContentFile>
+      <FullPath>C:\Users\Marjan Hussain\source\repos\BinaryTree\BinaryTreeGUI\Assets\Square44x44Logo.altform-unplated_targetsize-48.png</FullPath>
+    </ContentFile>
+    <ContentFile>
+      <FullPath>C:\Users\Marjan Hussain\source\repos\BinaryTree\BinaryTreeGUI\Assets\Square44x44Logo.scale-100.png</FullPath>
+    </ContentFile>
+    <ContentFile>
+      <FullPath>C:\Users\Marjan Hussain\source\repos\BinaryTree\BinaryTreeGUI\Assets\Square44x44Logo.scale-125.png</FullPath>
+    </ContentFile>
+    <ContentFile>
+      <FullPath>C:\Users\Marjan Hussain\source\repos\BinaryTree\BinaryTreeGUI\Assets\Square44x44Logo.scale-150.png</FullPath>
+    </ContentFile>
+    <ContentFile>
+      <FullPath>C:\Users\Marjan Hussain\source\repos\BinaryTree\BinaryTreeGUI\Assets\Square44x44Logo.scale-200.png</FullPath>
+    </ContentFile>
+    <ContentFile>
+      <FullPath>C:\Users\Marjan Hussain\source\repos\BinaryTree\BinaryTreeGUI\Assets\Square44x44Logo.scale-400.png</FullPath>
+    </ContentFile>
+    <ContentFile>
+      <FullPath>C:\Users\Marjan Hussain\source\repos\BinaryTree\BinaryTreeGUI\Assets\Square44x44Logo.targetsize-16.png</FullPath>
+    </ContentFile>
+    <ContentFile>
+      <FullPath>C:\Users\Marjan Hussain\source\repos\BinaryTree\BinaryTreeGUI\Assets\Square44x44Logo.targetsize-24.png</FullPath>
+    </ContentFile>
+    <ContentFile>
+      <FullPath>C:\Users\Marjan Hussain\source\repos\BinaryTree\BinaryTreeGUI\Assets\Square44x44Logo.targetsize-24_altform-unplated.png</FullPath>
+    </ContentFile>
+    <ContentFile>
+      <FullPath>C:\Users\Marjan Hussain\source\repos\BinaryTree\BinaryTreeGUI\Assets\Square44x44Logo.targetsize-256.png</FullPath>
+    </ContentFile>
+    <ContentFile>
+      <FullPath>C:\Users\Marjan Hussain\source\repos\BinaryTree\BinaryTreeGUI\Assets\Square44x44Logo.targetsize-32.png</FullPath>
+    </ContentFile>
+    <ContentFile>
+      <FullPath>C:\Users\Marjan Hussain\source\repos\BinaryTree\BinaryTreeGUI\Assets\Square44x44Logo.targetsize-48.png</FullPath>
+    </ContentFile>
+    <ContentFile>
+      <FullPath>C:\Users\Marjan Hussain\source\repos\BinaryTree\BinaryTreeGUI\Assets\StoreLogo.scale-100.png</FullPath>
+    </ContentFile>
+    <ContentFile>
+      <FullPath>C:\Users\Marjan Hussain\source\repos\BinaryTree\BinaryTreeGUI\Assets\StoreLogo.scale-125.png</FullPath>
+    </ContentFile>
+    <ContentFile>
+      <FullPath>C:\Users\Marjan Hussain\source\repos\BinaryTree\BinaryTreeGUI\Assets\StoreLogo.scale-150.png</FullPath>
+    </ContentFile>
+    <ContentFile>
+      <FullPath>C:\Users\Marjan Hussain\source\repos\BinaryTree\BinaryTreeGUI\Assets\StoreLogo.scale-200.png</FullPath>
+    </ContentFile>
+    <ContentFile>
+      <FullPath>C:\Users\Marjan Hussain\source\repos\BinaryTree\BinaryTreeGUI\Assets\StoreLogo.scale-400.png</FullPath>
+    </ContentFile>
+    <ContentFile>
+      <FullPath>C:\Users\Marjan Hussain\source\repos\BinaryTree\BinaryTreeGUI\Assets\Wide310x150Logo.scale-100.png</FullPath>
+    </ContentFile>
+    <ContentFile>
+      <FullPath>C:\Users\Marjan Hussain\source\repos\BinaryTree\BinaryTreeGUI\Assets\Wide310x150Logo.scale-125.png</FullPath>
+    </ContentFile>
+    <ContentFile>
+      <FullPath>C:\Users\Marjan Hussain\source\repos\BinaryTree\BinaryTreeGUI\Assets\Wide310x150Logo.scale-150.png</FullPath>
+    </ContentFile>
+    <ContentFile>
+      <FullPath>C:\Users\Marjan Hussain\source\repos\BinaryTree\BinaryTreeGUI\Assets\Wide310x150Logo.scale-200.png</FullPath>
+    </ContentFile>
+    <ContentFile>
+      <FullPath>C:\Users\Marjan Hussain\source\repos\BinaryTree\BinaryTreeGUI\Assets\Wide310x150Logo.scale-400.png</FullPath>
+    </ContentFile>
+  </ContentFiles>
+  <SatelliteDlls />
+  <NonRecipeFileRefs />
+</Project>
