@@ -31,3 +31,6 @@
 *.exe
 *.out
 *.app
+
+# Debugging files (add this line to ignore .pdb files)
+*.pdb
