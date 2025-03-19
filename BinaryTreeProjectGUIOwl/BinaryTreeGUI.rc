@@ -1,0 +1,44 @@
+// Microsoft Visual C++ generated resource script.
+//
+#include "resource.h"
+#include <owl/except.rc>
+#include <owl/inputdia.rc>
+
+// Binary Tree Dialog
+IDD_BINARYTREEGUI DIALOGEX 0, 0, 400, 600
+STYLE DS_SETFONT | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Binary Tree Processor"
+FONT 9, "Segoe UI", 0, 0, 0x1
+BEGIN
+// Input File Controls
+LTEXT           "Input File:", -1, 31, 10, 34, 14
+EDITTEXT        IDC_INPUT_FILE_EDIT, 70, 9, 250, 14, ES_AUTOHSCROLL
+PUSHBUTTON      "Select Input File", IDC_SELECT_INPUT_BUTTON, 106, 24, 59, 14
+
+// Output File Controls
+LTEXT           "Output File:", -1, 31, 41, 39, 14
+EDITTEXT        IDC_OUTPUT_FILE_EDIT, 70, 39, 250, 14, ES_READONLY
+PUSHBUTTON      "Select Existing", IDC_SELECT_EXISTING_BUTTON, 107, 55, 50, 14
+PUSHBUTTON      "Place New Output", IDC_PLACE_NEW_BUTTON, 193, 55, 66, 14
+
+// Process Controls
+PUSHBUTTON      "Process", IDC_PROCESS_BUTTON, 133, 86, 100, 20
+
+// Status and Results
+LTEXT           "", IDC_STATUS_STATIC, 10, 110, 380, 14
+LISTBOX         IDC_RESULTS_LIST, 10, 125, 380, 300, LBS_SORT | WS_VSCROLL
+
+CONTROL         "", IDC_LOGO_STATIC, "Static", SS_BITMAP, 133, 86, 300, 100
+
+// Create Equation Button
+PUSHBUTTON      "Create Equation", IDC_CREATE_EQUATION, 190, 25, 73, 13
+END
+
+/////////////////////////////////////////////////////////////////////////////
+// IMAGE Resource
+//
+
+LOGO_BITMAP BITMAP "ComputairLogo.bmp"
+
+
+/////////////////////////////////////////////////////////////////////////////

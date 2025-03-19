@@ -56,9 +56,6 @@
     <ClCompile Include="CommandLine.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="TreeEvaluator.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
     <ClCompile Include="SanityCheck.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>

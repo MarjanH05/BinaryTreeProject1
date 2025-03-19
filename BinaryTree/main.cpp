@@ -15,7 +15,7 @@ int main(int argc, char* argv[]) {
 
     FileManager FM;
     FM.SetFiles(inputFile, outputFile);
-    FM.CheckforErrors();
+    FM.CheckForErrors();
     FM.readFile();
 
     return 0;

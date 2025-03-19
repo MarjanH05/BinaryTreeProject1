@@ -18,11 +18,13 @@ public:
 class FileManager : public IFileWriter, IFileReader {
 public:
     void SetFiles(const std::string& input, const std::string& output);
-    void CheckforErrors();
+    void CheckForErrors();
+    std::vector<std::pair<std::string, double>> GetResults() const;
     void readFile() override;
     void writeFile(std::string line, double result) override;
 
 private:
     std::ifstream inputFile;
     std::ofstream outputFile;
+    std::vector<std::pair<std::string, double>> m_results;
 };

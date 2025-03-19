@@ -21,7 +21,6 @@
   <ItemGroup>
     <ClCompile Include="DllLoader.cpp" />
     <ClCompile Include="SanityCheck.cpp" />
-    <ClCompile Include="TreeEvaluator.cpp" />
     <ClInclude Include="BinaryTree.h" />
     <ClCompile Include="CommandLine.cpp" />
     <ClInclude Include="CommandLine.h" />
