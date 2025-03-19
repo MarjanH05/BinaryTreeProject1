@@ -48,8 +48,8 @@ namespace winrt::BinaryTreeGUI::implementation
         FileOpenPicker picker;
         picker.ViewMode(PickerViewMode::List);
         picker.FileTypeFilter().Append(L".txt");
-    
-        auto hwnd = ::GetActiveWindow(); 
+
+        auto hwnd = ::GetActiveWindow();
         picker.as<::IInitializeWithWindow>()->Initialize(hwnd);
         StorageFile file = co_await picker.PickSingleFileAsync();
         if (file)
@@ -65,7 +65,7 @@ namespace winrt::BinaryTreeGUI::implementation
         FileSavePicker picker;
         picker.SuggestedFileName(L"output.txt");
         picker.FileTypeChoices().Insert(L"Text Files", winrt::single_threaded_vector<hstring>({ L".txt" }));
-        auto hwnd = ::GetActiveWindow(); 
+        auto hwnd = ::GetActiveWindow();
         picker.as<::IInitializeWithWindow>()->Initialize(hwnd);
         StorageFile file = co_await picker.PickSaveFileAsync();
         if (file)
@@ -92,10 +92,10 @@ namespace winrt::BinaryTreeGUI::implementation
             ResultsPanel().Children().Clear();
 
             FileManager fm;
-            fm.SetFiles(inputFile, outputFile); 
-            fm.CheckForErrors(); 
-            fm.readFile(); 
-               
+            fm.SetFiles(inputFile, outputFile);
+            fm.CheckForErrors();
+            fm.readFile();
+
             auto results = fm.GetResults();
             for (const auto& [expression, result] : results)
             {
@@ -106,7 +106,7 @@ namespace winrt::BinaryTreeGUI::implementation
                 std::string formattedResult = stream.str();
 
                 formattedResult.erase(formattedResult.find_last_not_of('0') + 1, std::string::npos);
-                if (formattedResult.back() == '.') 
+                if (formattedResult.back() == '.')
                     formattedResult.pop_back();
 
                 std::string displayText = expression + " = " + formattedResult;

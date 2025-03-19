@@ -13,6 +13,9 @@
       <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
       <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
     </Filter>
+    <Filter Include="Resource Files\Images">
+      <UniqueIdentifier>{60c8ea04-c6ed-4be6-8f78-021d41c1118b}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="framework.h">
@@ -27,14 +30,41 @@
     <ClInclude Include="BinaryTreeProjectGUIOwl.h">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="FileProcessor.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="TMainDialog.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="BinaryTreeGUIOwl.cpp">
+    <ClCompile Include="..\BinaryTree\BinaryTree.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\BinaryTree\BinaryTreeUtils.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\BinaryTree\DllLoader.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\BinaryTree\FileManager.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\BinaryTree\SanityCheck.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="FileProcessor.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="OwlMain.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="TMainDialog.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <ResourceCompile Include="BinaryTreeProjectGUIOwl.rc">
+    <ResourceCompile Include="BinaryTreeGUI.rc">
       <Filter>Resource Files</Filter>
     </ResourceCompile>
   </ItemGroup>
@@ -43,6 +73,9 @@
       <Filter>Resource Files</Filter>
     </Image>
     <Image Include="BinaryTreeProjectGUIOwl.ico">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="ComputairLogo.bmp">
       <Filter>Resource Files</Filter>
     </Image>
   </ItemGroup>

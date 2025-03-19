@@ -3,11 +3,13 @@
 
 class EvaluateTreeTest : public ::testing::Test {
 protected:
-    EvaluatorLoader loader; 
+    EvaluatorLoader loader;
 
     void SetUp() override {
         loader = LoadCalculationDll();
-        ASSERT_TRUE(loader.isValid()) << "Failed to initialize DLL";
+        LoaderStatus status = loader.getStatus();
+        ASSERT_EQ(status, LoaderStatus::Succeeded) << "Failed to initialize DLL: "
+            << (status == LoaderStatus::DllNotFound ? "DLL not found" : "Function pointers not found");
     }
 
     std::shared_ptr<TreeNode> CreateDeepTree(int operatorDepth) {
@@ -114,4 +116,4 @@ TEST_F(EvaluateTreeTest, RecursionDepthExceeded) {
     loader.destroy(evaluator);
 
     EXPECT_DOUBLE_EQ(result, 501.0); // 1 + 1 + ... (500 times)
-}
+} 
