@@ -24,6 +24,7 @@
     <ProjectGuid>{4b48ada2-a168-407a-8fc2-087fd27f689b}</ProjectGuid>
     <RootNamespace>BinaryTreeProjectGUIOwl</RootNamespace>
     <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
+    <ProjectName>BinaryTreeGUIOwl</ProjectName>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">

@@ -139,7 +139,6 @@
     <ClCompile Include="..\BinaryTree\CommandLine.cpp" />
     <ClCompile Include="..\BinaryTree\DllLoader.cpp" />
     <ClCompile Include="..\BinaryTree\SanityCheck.cpp" />
-    <ClCompile Include="..\BinaryTree\TreeEvaluator.cpp" />
     <ClCompile Include="BuildTreeTests1.cpp" />
     <ClCompile Include="CommandLineTest1.cpp" />
     <ClCompile Include="EvaluateTreeTests1.cpp" />
