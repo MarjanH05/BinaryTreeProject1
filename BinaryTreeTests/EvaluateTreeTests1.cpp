@@ -117,3 +117,20 @@ TEST_F(EvaluateTreeTest, RecursionDepthExceeded) {
 
     EXPECT_DOUBLE_EQ(result, 501.0); // 1 + 1 + ... (500 times)
 } 
+TEST_F(EvaluateTreeTest, WeirdEvaluation) {
+    auto root = std::make_shared<TreeNode>("+");
+    root->left = std::make_shared<TreeNode>("-");
+    root->right = std::make_shared<TreeNode>("67");
+    root->left->left = std::make_shared<TreeNode>("-");
+    root->left->right = std::make_shared<TreeNode>("1");
+    root->left->left->left = std::make_shared<TreeNode>("-");
+    root->left->left->right = std::make_shared<TreeNode>("2");
+    root->left->left->left->left = std::make_shared<TreeNode>("4");
+    root->left->left->left->right = std::make_shared<TreeNode>("3");
+
+    IEvaluator* evaluator = loader.create();
+    double result = evaluator->Evaluate(root);
+    loader.destroy(evaluator);
+
+    EXPECT_DOUBLE_EQ(result, 65.0);  // 4 - 3 - 2 - 1 + 67
+}

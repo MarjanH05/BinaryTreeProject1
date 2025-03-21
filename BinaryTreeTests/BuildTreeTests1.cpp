@@ -55,14 +55,23 @@ TEST_F(TreeTest, ParenthesesExpression) {
 }
 
 // Test case for handling negative numbers.
-TEST_F(TreeTest, NegativeNumbers) {
-    std::string expression = "-3+5";
+TEST_F(TreeTest, ComplexExpressionWithNegative) {
+    std::string expression = "4-3-2-1+67"; 
     tree.buildTree(expression);
 
+    // Build the expected tree
     std::shared_ptr<TreeNode> expectedRoot = std::make_shared<TreeNode>("+");
-    expectedRoot->left = std::make_shared<TreeNode>("-3");
-    expectedRoot->right = std::make_shared<TreeNode>("5");
+    expectedRoot->left = std::make_shared<TreeNode>("-");
+    expectedRoot->right = std::make_shared<TreeNode>("67");
+
+    expectedRoot->left->left = std::make_shared<TreeNode>("-");
+    expectedRoot->left->right = std::make_shared<TreeNode>("1");
+
+    expectedRoot->left->left->left = std::make_shared<TreeNode>("-");
+    expectedRoot->left->left->right = std::make_shared<TreeNode>("2");
+
+    expectedRoot->left->left->left->left = std::make_shared<TreeNode>("4");
+    expectedRoot->left->left->left->right = std::make_shared<TreeNode>("3");
 
     EXPECT_TRUE(areTreesEqual(tree.root, expectedRoot));
 }
-
