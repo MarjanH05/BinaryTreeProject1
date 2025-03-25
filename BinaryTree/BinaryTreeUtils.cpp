@@ -9,7 +9,7 @@ int BinaryTreeUtils::precedence(const std::string& op) {
 }
 
 std::vector<std::string> BinaryTreeUtils::tokenize(const std::string& expression) {
-    std::regex token_regex("(-?\\d*\\.\\d+|-?\\d+|[-+*/^()])"); //possible negative , followed by the tokens
+    std::regex token_regex("(\\d*\\.\\d+|\\d+|[-+*/^()])");
     std::vector<std::string> tokens;
     auto begin = std::sregex_iterator(expression.begin(), expression.end(), token_regex);
     auto end = std::sregex_iterator();
@@ -21,7 +21,8 @@ std::vector<std::string> BinaryTreeUtils::tokenize(const std::string& expression
     return tokens;
 }
 
-void BinaryTreeUtils::processOperator(std::stack<std::shared_ptr<TreeNode>>& values, std::stack<std::shared_ptr<TreeNode>>& operators) {
+void BinaryTreeUtils::processOperator(std::stack<std::shared_ptr<TreeNode>>& values,
+    std::stack<std::shared_ptr<TreeNode>>& operators) {
     auto op = operators.top();
     operators.pop();
 
@@ -42,4 +43,8 @@ bool BinaryTreeUtils::isNegativeNumber(const std::vector<std::string>& tokens, s
             tokens[index - 1] == "+" || tokens[index - 1] == "-" ||
             tokens[index - 1] == "*" || tokens[index - 1] == "/" ||
             tokens[index - 1] == "^");
+}
+
+void BinaryTreeUtils::removeEqualsSign(std::string& expression) {
+    expression.erase(std::remove(expression.begin(), expression.end(), '='), expression.end());
 }

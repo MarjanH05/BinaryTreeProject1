@@ -1,7 +1,10 @@
 #include <windows.h>
 
 #define IDD_BINARYTREEGUI           101
-#define IDD_INPUTDIALOG				102
+
+#define IDI_MYICON					701
+#define IDB_COMPUTAIRLOGO			102
+
 #define IDC_INPUT_FILE_EDIT         1001
 #define IDC_SELECT_INPUT_BUTTON     1002
 #define IDC_OUTPUT_FILE_EDIT        1003
@@ -14,5 +17,4 @@
 #define IDC_CREATE_EQUATION         1010
 #define IDC_INPUT_EDIT				1101
 
-#define LOGO_BITMAP    2000 
 

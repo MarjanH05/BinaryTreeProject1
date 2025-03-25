@@ -36,6 +36,9 @@
     <ClInclude Include="TMainDialog.h">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="resource1.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="..\BinaryTree\BinaryTree.cpp">
@@ -64,18 +67,18 @@
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <ResourceCompile Include="BinaryTreeGUI.rc">
+    <ResourceCompile Include="BinaryTreeLayout.rc">
       <Filter>Resource Files</Filter>
     </ResourceCompile>
   </ItemGroup>
   <ItemGroup>
-    <Image Include="small.ico">
-      <Filter>Resource Files</Filter>
-    </Image>
-    <Image Include="BinaryTreeProjectGUIOwl.ico">
+    <Image Include="BinaryTreeLogo.ico">
       <Filter>Resource Files</Filter>
     </Image>
     <Image Include="ComputairLogo.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="ComputairLogo.PNG">
       <Filter>Resource Files</Filter>
     </Image>
   </ItemGroup>
