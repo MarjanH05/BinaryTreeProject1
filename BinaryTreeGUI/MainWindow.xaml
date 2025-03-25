@@ -79,7 +79,7 @@
                     <StackPanel x:Name="ResultsPanel" Margin="0,0,0,0" HorizontalAlignment="Left" VerticalAlignment="Top">
                     </StackPanel>
 
-                    <Image Source="ComputairLogo.png"
+                    <Image Source="Assets\ComputairLogo.PNG"
                        Width="400"
                        Height="300"
                        HorizontalAlignment="Right"

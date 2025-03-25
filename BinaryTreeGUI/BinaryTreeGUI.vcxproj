@@ -28,10 +28,10 @@
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
   <ItemGroup Label="ProjectConfigurations">
-	  <Content Include="..\bin\Debug\BinaryTreeCalculationDLL.dll">
-		  <Link>BinaryTreeCalculationDLL.dll</Link>
-		  <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-	  </Content>
+    <Content Include="..\bin\Debug\BinaryTreeCalculationDLL.dll">
+      <Link>BinaryTreeCalculationDLL.dll</Link>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
     <ProjectConfiguration Include="Debug|Win32">
       <Configuration>Debug</Configuration>
       <Platform>Win32</Platform>
@@ -154,7 +154,7 @@
     </Text>
   </ItemGroup>
   <ItemGroup>
-    <Image Include="..\..\..\..\Pictures\ComputairLogo.PNG" />
+    <Image Include="Assets\ComputairLogo.PNG" />
     <Image Include="Assets\LargeTile.scale-100.png" />
     <Image Include="Assets\LargeTile.scale-125.png" />
     <Image Include="Assets\LargeTile.scale-150.png" />
