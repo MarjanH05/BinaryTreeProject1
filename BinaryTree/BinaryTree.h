@@ -8,12 +8,12 @@
 
 class ITreeBuilder {
 public:
-    virtual void buildTree(const std::string& expression) = 0;
+    virtual void buildTree(std::string& expression) = 0;
 };
 
 class Tree : public ITreeBuilder{
 public:
     std::shared_ptr<TreeNode> root;
-    void buildTree(const std::string& expression) override;
+    void buildTree(std::string& expression) override;
 
 };

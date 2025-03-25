@@ -44,3 +44,7 @@ bool BinaryTreeUtils::isNegativeNumber(const std::vector<std::string>& tokens, s
             tokens[index - 1] == "*" || tokens[index - 1] == "/" ||
             tokens[index - 1] == "^");
 }
+
+void BinaryTreeUtils::removeEqualsSign(std::string& expression) {
+    expression.erase(std::remove(expression.begin(), expression.end(), '='), expression.end());
+}

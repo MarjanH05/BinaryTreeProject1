@@ -11,7 +11,7 @@ namespace winrt::BinaryTreeGUI::implementation
         MainWindow()
         {
             auto appWindow = this->AppWindow();
-            appWindow.SetIcon(L"C:\\Users\\Marjan Hussain\\source\\repos\\BinaryTree\\BinaryTreeGUI\\Assets\\menu_one.ico");
+            appWindow.SetIcon(L"Assets\\menu_one.ico");
             InitializeComponent();
         }
 

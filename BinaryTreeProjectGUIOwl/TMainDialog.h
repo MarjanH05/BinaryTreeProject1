@@ -8,12 +8,15 @@ class TMainDialog : public owl::TDialog {
 public:
     TMainDialog(owl::TWindow* parent = nullptr);
 
+    virtual void SetupWindow();
+
 protected:
     void CmSelectInput();
     void CmSelectExisting();
     void CmPlaceNewOutput();
     void CmProcess();
     void CmCreateEquation();
+    LRESULT EvDrawItem(WPARAM wParam, LPARAM lParam);
 
     bool GetOpenFileNameStr(owl::tstring& fileName);
     bool GetSaveFileNameStr(owl::tstring& fileName, LPCTSTR suggestedName);
