@@ -93,7 +93,6 @@ namespace winrt::BinaryTreeGUI::implementation
 
             FileManager fm;
             fm.SetFiles(inputFile, outputFile);
-            fm.CheckForErrors();
             fm.readFile();
 
             auto results = fm.GetResults();

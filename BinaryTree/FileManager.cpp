@@ -49,16 +49,6 @@ void FileManager::SetFiles(const std::string& input, const std::string& output) 
     }
 }
 
-void FileManager::CheckForErrors() {
-    if (!inputFile.is_open()) {
-        std::cerr << "Input file could not be opened" << std::endl;
-        throw std::runtime_error("Input file is not open.");
-    }
-    if (!outputFile.is_open()) {
-        std::cerr << "Output file could not be opened" << std::endl;
-        throw std::runtime_error("Output file is not open.");
-    }
-}
 
 std::vector<std::pair<std::string, double>> FileManager::GetResults() const {
     return m_results;

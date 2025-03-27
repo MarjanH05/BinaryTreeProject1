@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<WixLocalization Culture="en-us" xmlns="http://schemas.microsoft.com/wix/2006/localization">
+	
+	<String Id="Company">Marjan LTD</String>
+
+	<String Id="ProductName_x86">Binary Tree (32bit)</String>
+	<String Id="ProductName_x64">Binary Tree </String>
+	
+	<String Id="ProductNameFolder_x86">Binary Tree (32bit)</String>
+	<String Id="ProductNameFolder_x64">Binary Tree </String>
+	
+	<String Id="Description">This allows any calculation (BIDMAS) to be calculated using a binary tree</String>
+	<String Id="Comments">This installer contains the data required to install this Binary Tree Calculator</String>
+	<String Id="Keywords">Installer</String>
+	
+	<String Id="DowngradeErrorMessage">A newer version of the BinaryTree Application is already installed. If you want to 'downgrade' uninstall the current version</String>
+	
+</WixLocalization>

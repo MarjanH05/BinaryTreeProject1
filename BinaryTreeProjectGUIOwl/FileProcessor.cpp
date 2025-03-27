@@ -22,3 +22,4 @@ std::vector<std::pair<std::string, double>> UIUtils::ProcessFiles(const std::str
     fm.readFile();
     return fm.GetResults();
 }
+

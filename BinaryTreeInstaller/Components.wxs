@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Wix xmlns="http://schemas.microsoft.com/wix/2006/wi">
+	<Fragment>
+		<!-- ComponentGroup to include all components -->
+		<ComponentGroup Id="ProductComponents">
+			<ComponentRef Id="MainAppFile"/>
+			<ComponentRef Id="CalculationDLL"/>
+			<ComponentRef Id="ExampleofEquations"/>
+			<ComponentRef Id="ReadME"/>
+
+			<ComponentRef Id="MainAppShortcut"/>
+		</ComponentGroup>
+
+		<!-- Components installed to INSTALLFOLDER -->
+		<DirectoryRef Id="INSTALLFOLDER">
+
+			<Component Id="MainAppFile" Guid="{52292316-1781-4A1C-A65D-4974D7C222CC}">
+				<File Id="RequiredEXE"
+                      Source="$(var.ProjectDir)..\bin\$(var.Platform)\$(var.Configuration)\BinaryTreeGUIOwl.exe"
+                      KeyPath="yes" />
+			</Component>
+			<Component Id="CalculationDLL" Guid="{AA1590A8-DBE0-4F51-A60B-EBA84A08E0A8}">
+				<File Id="CalculationDLLFile"
+                      Source="$(var.ProjectDir)..\bin\BinaryTreeCalculationDLL.dll"
+                      KeyPath="yes" />
+			</Component>
+			
+			<Component Id="ExampleofEquations" Guid="{1457AAEB-99E6-4AA4-8EA8-D8ECE5EB7878}">
+				<File Id="DemoEquations"
+                      Source="$(var.ProjectDir)\Example_of_Equations.txt"
+                      KeyPath="yes" />
+			</Component>
+
+			<Component Id="ReadME" Guid="{50086B0B-3D00-4394-B7B2-2E53278A9753}">
+				<File Id="Readme.txt"
+                      Source="$(var.ProjectDir)\"
+                      KeyPath="yes" />
+			</Component>
+			
+		</DirectoryRef>
+
+		<!-- Component for the Start Menu shortcut -->
+		<DirectoryRef Id="InstallProgramMenuFolder">
+			<Component Id="MainAppShortcut" Guid="{99BCBB53-43B5-41DE-A1CE-802193DE0EED}">
+				<RegistryKey Root="HKCU" Key="Software\[Manufacturer]\[ProductName]\StartMenu" Action="createAndRemoveOnUninstall">
+					<RegistryValue Type="string" Name="ShortcutInstalled" Value="1" KeyPath="yes"/>
+				</RegistryKey>
+				<Shortcut Id="MainAppShortcut"
+                          Name="!(loc.ProductName_$(var.Platform))"
+                          Target="[INSTALLFOLDER]BinaryTreeGUIOwl.exe"
+                          WorkingDirectory="INSTALLFOLDER"
+                          Icon="BinaryTreeLogo.ico" />
+				<RemoveFolder Id="RemoveStartMenu" Directory="InstallProgramMenuFolder" On="uninstall"/>
+			</Component>
+		</DirectoryRef>
+	</Fragment>
+</Wix>
