@@ -24,9 +24,6 @@
     <ClInclude Include="TreeEvaluatorDll.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\BinaryTree\BinaryTree\TreeNode.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
     <ClInclude Include="..\..\BinaryTree\SanityCheck.h">
       <Filter>Header Files</Filter>
     </ClInclude>

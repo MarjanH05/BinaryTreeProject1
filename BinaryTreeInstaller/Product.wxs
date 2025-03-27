@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Wix xmlns="http://schemas.microsoft.com/wix/2006/wi">
+	
+	<Product Id="*"
+			 Name="!(loc.ProductName_$(var.Platform))"
+			 Language="1033"
+			 Version="1.0.3"
+			 Manufacturer="!(loc.Company)"
+			 UpgradeCode="{60DDBCF8-533F-40CE-A99A-461E9CEB6593}">
+		<Package InstallerVersion="400"
+				 Compressed="yes"
+				 InstallScope="perMachine"
+				 Platform="$(var.Platform)"
+				 Manufacturer="!(loc.Company)"
+				 Description="!(loc.Description)"
+				 Keywords="!(loc.Keywords)"
+				 Comments="!(loc.Comments)"/>
+		<MajorUpgrade
+			  DowngradeErrorMessage="!(loc.DowngradeErrorMessage)" />
+
+		<MediaTemplate 
+			EmbedCab="yes" />
+		
+		<Icon Id="BinaryTreeLogo.ico" SourceFile="$(var.BinaryTreeGUIOwl.ProjectDir)\BinaryTreeLogo.ico" />
+		<Property Id="ARPPRODUCTICON">BinaryTreeLogo.ico</Property>
+		<Property Id="ARPURLINFOABOUT">https://github.com/MarjanH05/BinaryTreeProject1</Property>
+		
+		<UIRef Id="WixUI_Minimal" />
+		<WixVariable Id="WixUILicenseRtf" Value="$(var.ProjectDir)\Assets\License.rtf" />
+		<WixVariable Id="WixUIDialogBmp" Value="$(var.ProjectDir)\Assets\Background.bmp" />
+		<WixVariable Id="WixUIBannerBmp" Value="$(var.ProjectDir)\Assets\Banner.bmp" />
+		
+		<Feature Id="ProductFeature" Title="ConsoleApp" Level="1">
+			<ComponentGroupRef Id="ProductComponents" />
+		</Feature>
+	</Product>
+</Wix>
