@@ -19,7 +19,6 @@ std::vector<std::pair<std::string, double>> UIUtils::ProcessFiles(const std::str
 {
     FileManager fm;
     fm.SetFiles(inputFile, outputFile);
-    fm.CheckForErrors();
     fm.readFile();
     return fm.GetResults();
 }

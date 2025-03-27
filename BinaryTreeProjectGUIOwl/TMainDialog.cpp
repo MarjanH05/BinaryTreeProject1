@@ -1,4 +1,3 @@
-// TMainDialog.cpp
 #include "TMainDialog.h"
 
 #include <owl/applicat.h>
@@ -253,5 +252,5 @@ LRESULT TMainDialog::EvDrawItem(WPARAM wParam, LPARAM lParam)
         HBRUSH hBorderBrush = CreateSolidBrush(RGB(0, 0, 0));
         FrameRect(hdc, &rect, hBorderBrush);
         DeleteObject(hBorderBrush);
-    return 0L;
+    return 0;
 }
