@@ -18,7 +18,7 @@ Not required but can be accepted.
 ## Structure and Syntax:
 
 *   **Infix Notation:** Equations are written in the standard infix notation (e.g., `2 + 3`).
-*   **Operator Precedence:** The system respects standard operator precedence (PEMDAS/BODMAS).  Exponentiation has the highest precedence, followed by multiplication and division, and then addition and subtraction.
+*   **Operator Precedence:** The system respects standard operator precedence (BIDMAS).  Exponentiation has the highest precedence, followed by multiplication and division, and then addition and subtraction.
 *   **Parentheses:** Parentheses `()` can be used to override the default operator precedence and group expressions (e.g., `(5 + 3) * 2`).
 *   **Negative Numbers:** The system correctly handles negative numbers, including cases where a negative sign is the first character in the expression or follows an opening parenthesis or another operator (e.g. `-3 + 5`, `2 * (-4)`).
 
