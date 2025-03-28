@@ -21,7 +21,7 @@
 			</Component>
 			<Component Id="CalculationDLL" Guid="{AA1590A8-DBE0-4F51-A60B-EBA84A08E0A8}">
 				<File Id="CalculationDLLFile"
-                      Source="$(var.ProjectDir)..\bin\BinaryTreeCalculationDLL.dll"
+                      Source="$(var.ProjectDir)..\bin\$(var.Platform)\$(var.Configuration)\BinaryTreeCalculationDll.dll"
                       KeyPath="yes" />
 			</Component>
 			
