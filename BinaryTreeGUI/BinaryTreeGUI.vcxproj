@@ -217,7 +217,6 @@
     <ProjectCapability Include="Msix" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="..\bin\Debug\BinaryTreeCalculationDll.dll" />
     <None Include="packages.config" />
   </ItemGroup>
   <!--

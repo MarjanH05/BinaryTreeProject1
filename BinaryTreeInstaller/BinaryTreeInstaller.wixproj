@@ -56,12 +56,16 @@
   <Target Name="EnsureWixToolsetInstalled" Condition=" '$(WixTargetsImported)' != 'true' ">
     <Error Text="The WiX Toolset v3.11 build tools must be installed to build this project. To download the WiX Toolset, see https://wixtoolset.org/releases/v3.11/stable" />
   </Target>
-  <Target Name="BeforeBuild">
-    <Message Text="Configuration: $(Configuration), Platform: $(Platform)" Importance="high" />
-    <Exec Command="cd &quot;..\BinaryTreeProjectGUIOwl&quot; &amp;&amp; &quot;C:\Program Files\Microsoft Visual Studio\2022\Professional\MSBuild\Current\Bin\MSBuild.exe&quot; BinaryTreeProjectGUIOwl.vcxproj /p:Platform=$(Platform) /p:Configuration=$(Configuration)" />
-  </Target>
-  <Target Name="AfterBuild">
-		<Exec Command="if not exist Installs mkdir Installs" />
-		<Exec Command="move &quot;bin\$(Platform)\$(Configuration)\en-us\$(OutputName).msi&quot; &quot;Installs\Binary Tree Install-$(Configuration)-$(Platform).msi&quot;" />
+	<Target Name="BeforeBuild">
+		<Exec Command="cd &quot;..\BinaryTreeCalculationDll\BinaryTreeCalculationDll&quot; &amp;&amp; &quot;C:\Program Files\Microsoft Visual Studio\2022\Professional\MSBuild\Current\Bin\MSBuild.exe&quot; BinaryTreeCalculationDll.vcxproj /p:Platform=$(Platform) /p:Configuration=$(Configuration)" />
+
+		<Exec Command="move /Y &quot;..\BinaryTreeCalculationDll\bin\$(Platform)\$(Configuration)\BinaryTreeCalculationDll.dll&quot; &quot;..\bin\$(Platform)\$(Configuration)\&quot;" />
+
+		<Exec Command="cd &quot;..\BinaryTreeProjectGUIOwl&quot; &amp;&amp; &quot;C:\Program Files\Microsoft Visual Studio\2022\Professional\MSBuild\Current\Bin\MSBuild.exe&quot; BinaryTreeProjectGUIOwl.vcxproj /p:Platform=$(Platform) /p:Configuration=$(Configuration)" />
 	</Target>
+
+	<Target Name="AfterBuild">
+    <Exec Command="if not exist Installs mkdir Installs" />
+    <Exec Command="move &quot;bin\$(Platform)\$(Configuration)\en-us\$(OutputName).msi&quot; &quot;Installs\Binary Tree Install-$(Configuration)-$(Platform).msi&quot;" />
+  </Target>
 </Project>
