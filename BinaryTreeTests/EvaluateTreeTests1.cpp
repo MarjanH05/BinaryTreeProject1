@@ -110,7 +110,9 @@ TEST_F(EvaluateTreeTest, DecimalEvaluation) {
 
 TEST_F(EvaluateTreeTest, RecursionDepthExceeded) {
     auto root = CreateDeepTree(500);
-    IEvaluator* evaluator = loader.create();
+    IEvaluator * evaluator = loader.create();
+    EXPECT_THROW(evaluator->Evaluate(root), std::runtime_error);  // 1 + 1 + ... (500 times)
+} 
 
     double result = evaluator->Evaluate(root);
     loader.destroy(evaluator);
