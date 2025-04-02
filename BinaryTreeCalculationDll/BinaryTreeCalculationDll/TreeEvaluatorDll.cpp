@@ -2,7 +2,6 @@
 #include <cmath>
 
 EvaluateTree::EvaluateTree() {
-    SanityCheck S;
     operations["+"] = std::plus<double>();
     operations["-"] = std::minus<double>();
     operations["*"] = std::multiplies<double>();
@@ -11,6 +10,7 @@ EvaluateTree::EvaluateTree() {
 }
 
 double EvaluateTree::Evaluate(std::shared_ptr<TreeNode> node) {
+    SanityCheck s;
     if (!node) return 0;
 
     if (isdigit(node->value[0]) || (node->value[0] == '-' && isdigit(node->value[1]))) {
@@ -19,6 +19,10 @@ double EvaluateTree::Evaluate(std::shared_ptr<TreeNode> node) {
 
     double lNode = Evaluate(node->left);
     double rNode = Evaluate(node->right);
+
+    if (node->value == "/" && rNode == 0) {
+        throw std::runtime_error("Division by zero error.");
+    }
 
     return operations[node->value](lNode, rNode);
 }
