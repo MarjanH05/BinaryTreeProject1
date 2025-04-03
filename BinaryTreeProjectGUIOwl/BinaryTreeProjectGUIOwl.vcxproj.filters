@@ -84,5 +84,11 @@
     <Image Include="ComputairLogo.bmp">
       <Filter>Resource Files\Images</Filter>
     </Image>
+    <Image Include="BinaryTreeLogo1.ico">
+      <Filter>Resource Files\Images</Filter>
+    </Image>
+    <Image Include="scan_property.ico">
+      <Filter>Resource Files\Images</Filter>
+    </Image>
   </ItemGroup>
 </Project>
