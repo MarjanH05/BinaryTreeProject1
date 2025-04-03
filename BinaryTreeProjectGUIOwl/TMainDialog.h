@@ -2,12 +2,12 @@
 
 #include <owl/dialog.h>
 #include <owl/listbox.h>
-#include <string>
+#include <owl/static.h> 
+#include <owl/edit.h>
 
 class TMainDialog : public owl::TDialog {
 public:
     TMainDialog(owl::TWindow* parent = nullptr);
-
     virtual void SetupWindow();
 
 protected:
@@ -24,4 +24,9 @@ protected:
     DECLARE_RESPONSE_TABLE(TMainDialog);
 
     owl::TListBox* ResultsListBox;
+    owl::TStatic* ImageStatic;
+    owl::TStatic* StatusStatic;
+
+    owl::TEdit* InputFileEdit;
+    owl::TEdit* OutputFileEdit;
 };

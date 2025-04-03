@@ -1,9 +1,12 @@
-#include <windows.h>
+#include <owl/pch.h>
 
 #define IDD_BINARYTREEGUI           101
 
 #define IDI_MYICON					701
+#define IDI_MYICONSM				702
+#define IDI_NOTMYICON				703
 #define IDB_COMPUTAIRLOGO			102
+
 
 #define IDC_INPUT_FILE_EDIT         1001
 #define IDC_SELECT_INPUT_BUTTON     1002
