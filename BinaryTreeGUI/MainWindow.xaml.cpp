@@ -49,7 +49,7 @@ namespace winrt::BinaryTreeGUI::implementation
         picker.ViewMode(PickerViewMode::List);
         picker.FileTypeFilter().Append(L".txt");
 
-        auto hwnd = ::GetActiveWindow();
+        auto hwnd = ::GetActiveWindow(); 
         picker.as<::IInitializeWithWindow>()->Initialize(hwnd);
         StorageFile file = co_await picker.PickSingleFileAsync();
         if (file)
@@ -69,7 +69,7 @@ namespace winrt::BinaryTreeGUI::implementation
         picker.as<::IInitializeWithWindow>()->Initialize(hwnd);
         StorageFile file = co_await picker.PickSaveFileAsync();
         if (file)
-        {
+        { 
             OutputFileTextBox().Text(file.Path());
         }
         co_return;

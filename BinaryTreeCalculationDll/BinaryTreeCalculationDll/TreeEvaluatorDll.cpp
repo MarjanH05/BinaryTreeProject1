@@ -20,10 +20,6 @@ double EvaluateTree::Evaluate(std::shared_ptr<TreeNode> node) {
     double lNode = Evaluate(node->left);
     double rNode = Evaluate(node->right);
 
-    if (node->value == "/" && rNode == 0) {
-        throw std::runtime_error("Division by zero error.");
-    }
-
     return operations[node->value](lNode, rNode);
 }
 

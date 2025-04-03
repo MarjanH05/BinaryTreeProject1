@@ -52,8 +52,8 @@ void Tree::buildTree(std::string& expression) {
         root = values.top();
     }
     catch (const std::exception& e) {
-
-        throw std::runtime_error("Error building tree: " + std::string(e.what()));
+        throw std::runtime_error("Error building tree: " + std::string(e.what()) +
+            ". Expression may be invalid.");
     }
 }
 

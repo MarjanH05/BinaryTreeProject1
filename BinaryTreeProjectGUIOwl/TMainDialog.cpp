@@ -79,7 +79,8 @@ void TMainDialog::SetupWindow()
 }
 
 bool TMainDialog::GetOpenFileNameStr(owl::tstring& fileName)
-{
+{ 
+   
     OPENFILENAME ofn = { 0 };
     TCHAR szFile[MAX_PATH] = _T("");
     ofn.lStructSize = sizeof(OPENFILENAME);
@@ -170,8 +171,7 @@ void TMainDialog::CmProcess()
         SetDlgItemText(IDC_OUTPUT_FILE_EDIT, _T(""));
     }
     catch (const std::exception& ex) {
-        owl::tstring werr = _T("Error: ") +
-            owl::tstring(ex.what(), ex.what() + strlen(ex.what()));
+        owl::tstring werr = _T("Error: ") + owl::tstring(ex.what()); 
         SetDlgItemText(IDC_STATUS_STATIC, werr.c_str());
     }
 }
@@ -192,14 +192,13 @@ void TMainDialog::CmCreateEquation()
 
         try {
             std::string strEquation(equation.begin(), equation.end());
-            Tree tree;
+            Tree tree{};
             tree.buildTree(strEquation);
             auto root = tree.root;
 
             EvaluatorLoader loader = LoadCalculationDll();
             IEvaluator* evaluator = loader.create();
             double result = evaluator->Evaluate(root);
-
             int saveResponse = MessageBox(
                 owl::tstring(strEquation.begin(), strEquation.end()) +
                 _T(" = ") + std::to_string(result),
@@ -225,8 +224,7 @@ void TMainDialog::CmCreateEquation()
             }
         }
         catch (const std::exception& ex) {
-            owl::tstring werr = _T("Error: ") +
-                owl::tstring(ex.what(), ex.what() + strlen(ex.what()));
+            owl::tstring werr = _T("Error: ") + owl::tstring(ex.what());
             MessageBox(werr.c_str(), _T("Error"), MB_OK | MB_ICONERROR);
         }
     }

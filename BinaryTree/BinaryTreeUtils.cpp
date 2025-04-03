@@ -30,6 +30,7 @@ std::vector<std::string> BinaryTreeUtils::tokenize(const std::string& expression
 
     return tokens;
 }
+
 void BinaryTreeUtils::processOperator(std::stack<std::shared_ptr<TreeNode>>& values,
     std::stack<std::shared_ptr<TreeNode>>& operators) {
     auto op = operators.top();
