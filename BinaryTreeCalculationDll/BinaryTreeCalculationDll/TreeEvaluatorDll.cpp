@@ -30,3 +30,4 @@ extern "C" BINARYTREECALCULATION_API IEvaluator* CreateEvaluator() {
 extern "C" BINARYTREECALCULATION_API void DestroyEvaluator(IEvaluator* evaluator) {
     delete evaluator;
 }
+

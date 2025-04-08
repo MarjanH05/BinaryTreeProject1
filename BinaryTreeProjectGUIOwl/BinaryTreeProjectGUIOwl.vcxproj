@@ -169,7 +169,6 @@
     <ClInclude Include="BinaryTreeProjectGUIOwl.h" />
     <ClInclude Include="FileProcessor.h" />
     <ClInclude Include="framework.h" />
-    <ClInclude Include="resource1.h" />
     <ClInclude Include="TMainDialog.h" />
     <ClInclude Include="Resource.h" />
     <ClInclude Include="targetver.h" />
@@ -192,7 +191,6 @@
     <Image Include="BinaryTreeLogo1.ico" />
     <Image Include="ComputairLogo.PNG" />
     <Image Include="ComputairLogo.bmp" />
-    <Image Include="scan_property.ico" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
