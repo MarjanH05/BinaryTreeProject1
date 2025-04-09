@@ -1,57 +1,42 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Wix xmlns="http://schemas.microsoft.com/wix/2006/wi">
-
-	<!-- Give product a unique ID per platform -->
 	<?if $(var.Platform)=x64 ?>
 	<?define ProductCode = "{DE3B1CBB-BF7B-46BA-BCBB-4B1542C9B3BB}" ?>
 	<?else?>
 	<?define ProductCode = "{B6C0672A-D365-4D2B-B6A1-42E908D181E0}" ?>
-	<?endif?> 
-	
-	<Product Id="$(var.ProductCode)"
+	<?endif?>
+
+	<Product Id="*"
 			 Name="!(loc.ProductName_$(var.Platform))"
 			 Language="1033"
 			 Version="1.0.4"
 			 Manufacturer="!(loc.Company)"
 			 UpgradeCode="{60DDBCF8-533F-40CE-A99A-461E9CEB6593}">
-		<Package InstallerVersion="400"
+
+		<Package InstallerVersion="200"
 				 Compressed="yes"
 				 InstallScope="perMachine"
 				 Platform="$(var.Platform)"
-				 Manufacturer="!(loc.Company)"
 				 Description="!(loc.Description)"
 				 Keywords="!(loc.Keywords)"
-				 Comments="!(loc.Comments)"/>
-		
-		<MajorUpgrade
-			  DowngradeErrorMessage="!(loc.DowngradeErrorMessage)"
-			  AllowSameVersionUpgrades="yes"/>
+				 Comments="!(loc.Comments)" />
 
-		<MediaTemplate 
-			EmbedCab="yes" />
-		
+		<MajorUpgrade DowngradeErrorMessage="!(loc.DowngradeErrorMessage)"
+					  AllowSameVersionUpgrades="yes" />
+
+		<MediaTemplate EmbedCab="yes" />
+
 		<Icon Id="BinaryTreeLogo.ico" SourceFile="$(var.BinaryTreeGUIOwl.ProjectDir)\BinaryTreeLogo.ico" />
 		<Property Id="ARPPRODUCTICON">BinaryTreeLogo.ico</Property>
 		<Property Id="ARPURLINFOABOUT">https://github.com/MarjanH05/BinaryTreeProject1</Property>
-		
+
 		<UIRef Id="WixUI_Minimal" />
 		<WixVariable Id="WixUILicenseRtf" Value="$(var.ProjectDir)\Assets\License.rtf" />
 		<WixVariable Id="WixUIDialogBmp" Value="$(var.ProjectDir)\Assets\Background.bmp" />
 		<WixVariable Id="WixUIBannerBmp" Value="$(var.ProjectDir)\Assets\Banner.bmp" />
-		
-		<Feature Id="ProductFeature" Title="ConsoleApp" Level="1">
-			<ComponentGroupRef Id="ProductComponents" />
-		</Feature>
 
-		<CustomAction Id="InstallVCRedist"
-                      FileKey="VCRedistFile"
-                      ExeCommand="/install /quiet"
-                      Execute="deferred"
-                      Impersonate="no"
-                      Return="check" />
-		<InstallExecuteSequence>
-			<Custom Action="InstallVCRedist" After="InstallFiles" />
-		</InstallExecuteSequence>
-		
+		<Feature Id="ProductFeature" Title="Binary Tree App" Level="1">
+			<ComponentGroupRef Id="ProductComponents"/>
+		</Feature>
 	</Product>
 </Wix>
