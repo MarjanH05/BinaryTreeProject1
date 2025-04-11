@@ -21,39 +21,39 @@ DEFINE_RESPONSE_TABLE1(TMainDialog, TDialog)
 EV_COMMAND(IDC_SELECT_INPUT_BUTTON, CmSelectInput),
 EV_COMMAND(IDC_SELECT_EXISTING_BUTTON, CmSelectExisting),
 EV_COMMAND(IDC_PLACE_NEW_BUTTON, CmPlaceNewOutput),
-EV_COMMAND(IDC_PROCESS_BUTTON,CmProcess),
+EV_COMMAND(IDC_PROCESS_BUTTON, CmProcess),
 EV_COMMAND(IDC_CREATE_EQUATION, CmCreateEquation),
-EV_MESSAGE(WM_DRAWITEM,EvDrawItem),
+EV_MESSAGE(WM_DRAWITEM, EvDrawItem),
 END_RESPONSE_TABLE;
 
 
 TMainDialog::TMainDialog(owl::TWindow* parent)
     : TDialog(parent, IDD_BINARYTREEGUI)
     , ResultsListBox(new owl::TListBox(this, IDC_RESULTS_LIST))
-    , ImageStatic(new owl::TStatic(this, IDC_LOGO_STATIC)) 
+    , ImageStatic(new owl::TStatic(this, IDC_LOGO_STATIC))
     , StatusStatic(new owl::TStatic(this, IDC_STATUS_STATIC))
-    , InputFileEdit(new owl::TEdit(this,IDC_INPUT_FILE_EDIT)) 
-    , OutputFileEdit(new owl::TEdit(this, IDC_OUTPUT_FILE_EDIT)) 
+    , InputFileEdit(new owl::TEdit(this, IDC_INPUT_FILE_EDIT))
+    , OutputFileEdit(new owl::TEdit(this, IDC_OUTPUT_FILE_EDIT))
 {
 }
 
-void TMainDialog::SetupWindow() { 
-    TDialog::SetupWindow(); 
+void TMainDialog::SetupWindow() {
+    TDialog::SetupWindow();
 
-    HICON hIcon = ::LoadIcon(GetModuleHandle(NULL), MAKEINTRESOURCE(IDI_MYICON)); 
-    if (hIcon) 
-    { 
-        ::SendMessage(GetHandle(), WM_SETICON, ICON_BIG, (LPARAM)hIcon);   
-        ::SendMessageA(GetHandle(), WM_SETICON, ICON_SMALL, (LPARAM)hIcon); 
+    HICON hIcon = ::LoadIcon(GetModuleHandle(NULL), MAKEINTRESOURCE(IDI_MYICON));
+    if (hIcon)
+    {
+        ::SendMessage(GetHandle(), WM_SETICON, ICON_BIG, (LPARAM)hIcon);
+        ::SendMessageA(GetHandle(), WM_SETICON, ICON_SMALL, (LPARAM)hIcon);
     }
 
-    HBITMAP hBitmap = (HBITMAP)LoadImage(GetModuleHandle(NULL), MAKEINTRESOURCE(IDB_COMPUTAIRLOGO), IMAGE_BITMAP, 800, 200,  LR_SHARED);
+    HBITMAP hBitmap = (HBITMAP)LoadImage(GetModuleHandle(NULL), MAKEINTRESOURCE(IDB_COMPUTAIRLOGO), IMAGE_BITMAP, 800, 200, LR_SHARED);
 
-    if (hBitmap) 
+    if (hBitmap)
     {
         ImageStatic->SetImage(hBitmap);
     }
-    else 
+    else
     {
         MessageBox(_T("Failed to load image"), _T("Error"), MB_OK | MB_ICONERROR);
     }
@@ -61,8 +61,8 @@ void TMainDialog::SetupWindow() {
 }
 
 bool TMainDialog::GetOpenFileNameStr(owl::tstring& fileName)
-{ 
-   
+{
+
     OPENFILENAME ofn = { 0 };
     TCHAR szFile[MAX_PATH] = _T("");
     ofn.lStructSize = sizeof(OPENFILENAME);
@@ -101,7 +101,7 @@ void TMainDialog::CmSelectInput()
 {
     owl::tstring fileName;
     if (GetOpenFileNameStr(fileName)) {
-        InputFileEdit->SetText(fileName.c_str()); 
+        InputFileEdit->SetText(fileName.c_str());
     }
 }
 
@@ -109,7 +109,7 @@ void TMainDialog::CmSelectExisting()
 {
     owl::tstring fileName;
     if (GetOpenFileNameStr(fileName)) {
-        OutputFileEdit->SetText(fileName.c_str()); 
+        OutputFileEdit->SetText(fileName.c_str());
     }
 }
 
@@ -117,7 +117,7 @@ void TMainDialog::CmPlaceNewOutput()
 {
     owl::tstring fileName;
     if (GetSaveFileNameStr(fileName, _T("output.txt"))) {
-        OutputFileEdit->SetText(fileName.c_str()); 
+        OutputFileEdit->SetText(fileName.c_str());
     }
 }
 
@@ -145,11 +145,11 @@ void TMainDialog::CmProcess()
         for (const auto& [expression, value] : results) {
             std::string formattedResult = UIUtils::FormatResult(value);
             owl::tstring displayText = owl::tstring(expression.begin(), expression.end()) + _T(" = ") + owl::tstring(formattedResult);
-            ResultsListBox->AddString(displayText.c_str()); 
+            ResultsListBox->AddString(displayText.c_str());
         }
         StatusStatic->SetText(_T("Processing complete. Check the output file."));
-        InputFileEdit->SetText(_T("")); 
-        OutputFileEdit->SetText(_T("")); 
+        InputFileEdit->SetText(_T(""));
+        OutputFileEdit->SetText(_T(""));
     }
     catch (const std::exception& ex) {
         StatusStatic->SetText(_T("Error: ") + owl::tstring(ex.what()));
@@ -168,21 +168,21 @@ void TMainDialog::CmCreateEquation()
         owl::tstring equation(buffer);
         if (equation.empty())
         {
-            MessageBox(_T("No equation entered."), _T("Info"), MB_OK); 
+            MessageBox(_T("No equation entered."), _T("Info"), MB_OK);
             break;
         }
 
-        try { 
-            std::string strEquation(equation.begin(), equation.end()); 
-            Tree tree{}; 
-            tree.buildTree(strEquation); 
-            auto root = tree.root; 
-             
-            EvaluatorLoader loader = LoadCalculationDll(); 
-            IEvaluator* evaluator = loader.create(); 
+        try {
+            std::string strEquation(equation.begin(), equation.end());
+            Tree tree{};
+            tree.buildTree(strEquation);
+            auto root = tree.root;
 
-            double result = evaluator->Evaluate(root); 
-            int saveResponse = MessageBox(owl::tstring(strEquation.begin(), strEquation.end()) +  _T(" = ") + std::to_string(result),  _T("Save Result?"), MB_YESNO | MB_ICONQUESTION);
+            EvaluatorLoader loader = LoadCalculationDll();
+            IEvaluator* evaluator = loader.create();
+
+            double result = evaluator->Evaluate(root);
+            int saveResponse = MessageBox(owl::tstring(strEquation.begin(), strEquation.end()) + _T(" = ") + std::to_string(result), _T("Save Result?"), MB_YESNO | MB_ICONQUESTION);
 
             if (saveResponse == IDYES) {
                 owl::tstring filePath;
