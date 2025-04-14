@@ -8,7 +8,7 @@
 	<String Id="ProductName_x64">Binary Tree </String>
 	
 	<String Id="ProductNameFolder_x86">Binary Tree (32bit)</String>
-	<String Id="ProductNameFolder_x64">Binary Tree </String>
+	<String Id="ProductNameFolder_x64">Binary Tree</String>
 	
 	<String Id="Description">This allows any calculation (BIDMAS) to be calculated using a binary tree</String>
 	<String Id="Comments">This installer contains the data required to install this Binary Tree Calculator</String>

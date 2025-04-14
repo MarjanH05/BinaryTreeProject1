@@ -7,23 +7,21 @@
 	<?endif?>
 
 	<Product Id="*"
-			 Name="!(loc.ProductName_$(var.Platform))"
+			 Name="!(loc.ProductName_$(var.Platform))-User Install"
 			 Language="1033"
 			 Version="1.0.4"
 			 Manufacturer="!(loc.Company)"
 			 UpgradeCode="{60DDBCF8-533F-40CE-A99A-461E9CEB6593}">
 
-		<Package InstallerVersion="200"
+		<Package InstallerVersion="500"
 				 Compressed="yes"
-				 InstallScope="perMachine"
+				 InstallScope="perUser"
 				 Platform="$(var.Platform)"
 				 Description="!(loc.Description)"
 				 Keywords="!(loc.Keywords)"
 				 Comments="!(loc.Comments)" />
 
-		<MajorUpgrade DowngradeErrorMessage="!(loc.DowngradeErrorMessage)"
-					  AllowSameVersionUpgrades="yes" />
-
+		<MajorUpgrade DowngradeErrorMessage="!(loc.DowngradeErrorMessage)" AllowSameVersionUpgrades="yes" />
 		<MediaTemplate EmbedCab="yes" />
 
 		<Icon Id="BinaryTreeLogo.ico" SourceFile="$(var.BinaryTreeGUIOwl.ProjectDir)\BinaryTreeLogo.ico" />
@@ -34,9 +32,10 @@
 		<WixVariable Id="WixUIDialogBmp" Value="$(var.ProjectDir)\Assets\Background.bmp" />
 		<WixVariable Id="WixUIBannerBmp" Value="$(var.ProjectDir)\Assets\Banner.bmp" />
 		<WixVariable Id="WixUILicenseRtf" Value="$(var.ProjectDir)\Assets\License.rtf" />
+
 		<Feature Id="ProductFeature" Title="Binary Tree App" Level="1">
-			<ComponentGroupRef Id="ProductComponents"/>
-            <MergeRef Id="VCRedist" />
+			<ComponentGroupRef Id="ProductComponents" />
 		</Feature>
+
 	</Product>
 </Wix>
