@@ -31,12 +31,12 @@
 		<Property Id="ARPURLINFOABOUT">https://github.com/MarjanH05/BinaryTreeProject1</Property>
 
 		<UIRef Id="WixUI_Minimal" />
-		<WixVariable Id="WixUILicenseRtf" Value="$(var.ProjectDir)\Assets\License.rtf" />
 		<WixVariable Id="WixUIDialogBmp" Value="$(var.ProjectDir)\Assets\Background.bmp" />
 		<WixVariable Id="WixUIBannerBmp" Value="$(var.ProjectDir)\Assets\Banner.bmp" />
-
+		<WixVariable Id="WixUILicenseRtf" Value="$(var.ProjectDir)\Assets\License.rtf" />
 		<Feature Id="ProductFeature" Title="Binary Tree App" Level="1">
 			<ComponentGroupRef Id="ProductComponents"/>
+            <MergeRef Id="VCRedist" />
 		</Feature>
 	</Product>
 </Wix>
