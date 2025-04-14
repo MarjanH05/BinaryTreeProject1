@@ -37,7 +37,8 @@ TMainDialog::TMainDialog(owl::TWindow* parent)
 {
 }
 
-void TMainDialog::SetupWindow() {
+void TMainDialog::SetupWindow()
+{
     TDialog::SetupWindow();
 
     HICON hIcon = ::LoadIcon(GetModuleHandle(NULL), MAKEINTRESOURCE(IDI_MYICON));
@@ -182,9 +183,10 @@ void TMainDialog::CmCreateEquation()
             IEvaluator* evaluator = loader.create();
 
             double result = evaluator->Evaluate(root);
-            int saveResponse = MessageBox(owl::tstring(strEquation.begin(), strEquation.end()) + _T(" = ") + std::to_string(result), _T("Save Result?"), MB_YESNO | MB_ICONQUESTION);
+            int saveResponse = MessageBox(owl::tstring(strEquation.begin(), strEquation.end()) + _T(" = ") + std::to_string(result), _T("Save Result?"), MB_OKCANCEL | MB_ICONQUESTION);
 
-            if (saveResponse == IDYES) {
+            if (saveResponse == IDYES)
+            {
                 owl::tstring filePath;
                 if (GetOpenFileNameStr(filePath))
                 {
@@ -231,3 +233,5 @@ LRESULT TMainDialog::EvDrawItem(WPARAM wParam, LPARAM lParam)
     DeleteObject(hBorderBrush);
     return 0;
 }
+
+
