@@ -15,8 +15,6 @@
 #include "FileProcessor.h"
 #include "../BinaryTree/FileManager.h"
 
-
-
 DEFINE_RESPONSE_TABLE1(TMainDialog, TDialog)
 EV_COMMAND(IDC_SELECT_INPUT_BUTTON, CmSelectInput),
 EV_COMMAND(IDC_SELECT_EXISTING_BUTTON, CmSelectExisting),

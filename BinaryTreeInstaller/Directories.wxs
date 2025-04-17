@@ -8,6 +8,8 @@
 			<Directory Id="ProgramMenuFolder">
 				<Directory Id="InstallProgramMenuFolder" Name="!(loc.ProductNameFolder_$(var.Platform))" />
 			</Directory>
+			<Directory Id="DesktopFolder" Name="Desktop"/>
 		</Directory>
+
 	</Fragment>
 </Wix>
