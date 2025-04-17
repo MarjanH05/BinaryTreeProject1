@@ -185,7 +185,7 @@ void TMainDialog::CmCreateEquation()
             double result = evaluator->Evaluate(root);
             int saveResponse = MessageBox(owl::tstring(strEquation.begin(), strEquation.end()) + _T(" = ") + std::to_string(result), _T("Save Result?"), MB_OKCANCEL | MB_ICONQUESTION);
 
-            if (saveResponse == IDYES)
+            if (saveResponse == IDOK)
             {
                 owl::tstring filePath;
                 if (GetOpenFileNameStr(filePath))
