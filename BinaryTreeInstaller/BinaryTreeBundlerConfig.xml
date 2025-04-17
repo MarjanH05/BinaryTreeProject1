@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Config>
+	<Bundle Name="Binary Tree Calculator"
+			UpgradeCode="{2EEC2C9F-594F-4BDB-B552-E71DB15D4E73}"
+			DisableModify="yes">
+		<CustomAttributes SignedName="BinaryTree_{yyyy}-{mm}-{dd}_V{vermajor}.{verminor}.{verrevision}.exe"
+						  VerWXS="C:\Users\Marjan Hussain\source\repos\BinaryTree\BinaryTreeInstaller\Product.wxs"
+						  LogoFile="C:\Users\Marjan Hussain\source\repos\BinaryTree\BinaryTreeInstaller\Assets\Background.bmp"/>
+		<PreRequisites>
+			<Item StdPreRequisite="vc.17.x64" VcVer="17"/>
+		</PreRequisites>
+		<Includes>
+			<Item DisplayInternalUI="no"
+				  InstallCondition="NOT installed"
+				  Visible="no"
+				  Id="BinaryTreeInstallerMSI">
+				<CustomAttributes SourceFile="C:\Users\Marjan Hussain\source\repos\BinaryTree\BinaryTreeInstaller\bin\x64\Release\en-us\BinaryTreeInstaller.msi"
+								  SignedName="BinaryTree_{yyyy}-{mm}-{dd}_V{vermajor}.{verminor}.{verrevision}.msi"
+								  VerWXS="C:\Users\Marjan Hussain\source\repos\BinaryTree\BinaryTreeInstaller\Product.wxs"/>
+			</Item>
+		</Includes>
+	</Bundle>
+</Config>
+
