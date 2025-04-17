@@ -12,33 +12,38 @@
 
 		<DirectoryRef Id="INSTALLFOLDER">
 
-			<Merge Id="VCRedist"
-				   SourceFile="C:\Program Files\Microsoft Visual Studio\2022\Professional\VC\Redist\MSVC\14.40.33807\MergeModules\Microsoft_VC143_CRT_$(var.Platform).msm"
-	               DiskId="1"
-	               Language="0" />
-	
-			<Component Id="MainAppFile" Guid="{52292316-1781-4A1C-A65D-4974D7C222CC}">
+			<Component Id="MainAppFile" Guid="{52292316-1781-4A1C-A65D-4974D7C222CC}"> 
+				<RegistryKey Root="HKCU" Key="Software\[Manufacturer]\[ProductName]\MainAppFile" Action="createAndRemoveOnUninstall"> 
+					<RegistryValue Type="string" Name="Installed" Value="1" KeyPath="yes"/> 
+				</RegistryKey> 
 				<File Id="RequiredEXE"
-					  Source="$(var.ProjectDir)..\bin\$(var.Platform)\$(var.Configuration)\BinaryTreeGUIOwl.exe"
-					  KeyPath="yes" />
-			</Component>
+					  Source="$(var.ProjectDir)..\bin\$(var.Platform)\$(var.Configuration)\BinaryTreeGUIOwl.exe"/> 
+				<RemoveFile Id="RemoveAllFiles" Name="*.*" On="uninstall"/> 
+				<RemoveFolder Id="RemoveInstallFolder" On="uninstall"/>
+			</Component> 
 
 			<Component Id="CalculationDLL" Guid="{AA1590A8-DBE0-4F51-A60B-EBA84A08E0A8}">
+				<RegistryKey Root="HKCU" Key="Software\[Manufacturer]\[ProductName]\CalculationDLL" Action="createAndRemoveOnUninstall">
+					<RegistryValue Type="string" Name="Installed" Value="1" KeyPath="yes"/>
+				</RegistryKey>
 				<File Id="CalculationDLLFile"
-					  Source="$(var.ProjectDir)..\bin\$(var.Platform)\$(var.Configuration)\BinaryTreeCalculationDll.dll"
-					  KeyPath="yes" />
+					  Source="$(var.ProjectDir)..\bin\$(var.Platform)\$(var.Configuration)\BinaryTreeCalculationDll.dll"/>
 			</Component>
 
 			<Component Id="ExampleofEquations" Guid="{1457AAEB-99E6-4AA4-8EA8-D8ECE5EB7878}">
+				<RegistryKey Root="HKCU" Key="Software\[Manufacturer]\[ProductName]\Equations" Action="createAndRemoveOnUninstall">
+					<RegistryValue Type="string" Name="Installed" Value="1" KeyPath="yes"/>
+				</RegistryKey>
 				<File Id="DemoEquations"
-					  Source="$(var.ProjectDir)\Example_of_Equations.txt"
-					  KeyPath="yes" />
+					  Source="$(var.ProjectDir)\Example_of_Equations.txt"/>
 			</Component>
 
 			<Component Id="ReadME" Guid="{50086B0B-3D00-4394-B7B2-2E53278A9753}">
+				<RegistryKey Root="HKCU" Key="Software\[Manufacturer]\[ProductName]\Readme" Action="createAndRemoveOnUninstall">
+					<RegistryValue Type="string" Name="Installed" Value="1" KeyPath="yes"/>
+				</RegistryKey>
 				<File Id="Readme.txt"
-					  Source="$(var.ProjectDir)\Readme.txt"
-					  KeyPath="yes" />
+					  Source="$(var.ProjectDir)\Readme.txt"/>
 			</Component>
 
 		</DirectoryRef>

@@ -13,9 +13,9 @@
 			 Manufacturer="!(loc.Company)"
 			 UpgradeCode="{60DDBCF8-533F-40CE-A99A-461E9CEB6593}">
 
-		<Package InstallerVersion="200"
+		<Package InstallerVersion="500"
 				 Compressed="yes"
-				 InstallScope="perMachine"
+				 InstallScope="perUser"
 				 Platform="$(var.Platform)"
 				 Description="!(loc.Description)"
 				 Keywords="!(loc.Keywords)"
@@ -36,7 +36,6 @@
 		<WixVariable Id="WixUILicenseRtf" Value="$(var.ProjectDir)\Assets\License.rtf" />
 		<Feature Id="ProductFeature" Title="Binary Tree App" Level="1">
 			<ComponentGroupRef Id="ProductComponents"/>
-            <MergeRef Id="VCRedist" />
 		</Feature>
 	</Product>
 </Wix>
