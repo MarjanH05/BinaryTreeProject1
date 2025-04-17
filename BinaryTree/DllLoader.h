@@ -1,8 +1,8 @@
 #pragma once
 #include <windows.h>
 #include <functional>
-#include <memory> 
 
+#include <memory>
 #include "TreeNode.h" 
 
 enum class LoaderStatus {

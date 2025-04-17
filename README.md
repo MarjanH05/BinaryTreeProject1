@@ -13,3 +13,4 @@ Hopefully that is a 100% working test!
 There are 2 GUI version, I'd reccomend using the BinaryTreeGUIOWl but both work. Simply make them the startup project. 
 
 Finally the installer. Click on BinaryTreeInstaller and press build. This will generate an install in the folder 'installs'. This create a machine - install application.  
+
