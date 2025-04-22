@@ -48,7 +48,7 @@
 			</Component>
 
 		</DirectoryRef>
-		<!-- Start Menu Shortcut -->
+		
 		<DirectoryRef Id="InstallProgramMenuFolder">
 			<Component Id="MainAppShortcut" Guid="{99BCBB53-43B5-41DE-A1CE-802193DE0EED}">
 				<RegistryKey Root="HKCU" Key="Software\[Manufacturer]\[ProductName]\StartMenu" Action="createAndRemoveOnUninstall">
@@ -63,7 +63,6 @@
 			</Component>
 		</DirectoryRef>
 
-		<!-- Desktop Shortcut -->
 		<DirectoryRef Id="DesktopFolder">
 			<Component Id="DesktopShortcut" Guid="{F8A3651A-789E-4E30-BEE1-857264E0FC9E}">
 				<RegistryKey Root="HKCU" Key="Software\[Manufacturer]\[ProductName]\DesktopShortcut" Action="createAndRemoveOnUninstall">
