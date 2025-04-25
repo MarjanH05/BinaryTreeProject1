@@ -65,8 +65,6 @@
     <Exec Command="cd &quot;..\BinaryTreeProjectGUIOwl&quot; &amp;&amp; &quot;C:\Program Files\Microsoft Visual Studio\2022\Professional\MSBuild\Current\Bin\MSBuild.exe&quot; BinaryTreeProjectGUIOwl.vcxproj /p:Platform=$(Platform) /p:Configuration=$(Configuration)" />
   </Target>
   <Target Name="AfterBuild">
-    <!--<Exec Command="if not exist Installs mkdir Installs" />
-    <Exec Command="move &quot;bin\$(Platform)\$(Configuration)\en-us\$(OutputName).msi&quot; &quot;Installs\Binary Tree Install-$(Configuration)-$(Platform).msi&quot;" />-->
   </Target>
   <PropertyGroup>
     <PreBuildEvent />

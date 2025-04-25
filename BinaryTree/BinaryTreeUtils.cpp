@@ -48,11 +48,7 @@ void BinaryTreeUtils::processOperator(std::stack<std::shared_ptr<TreeNode>>& val
 }
 
 bool BinaryTreeUtils::isNegativeNumber(const std::vector<std::string>& tokens, size_t index) {
-    return tokens[index] == "-" &&
-        (index == 0 || tokens[index - 1] == "(" ||
-            tokens[index - 1] == "+" || tokens[index - 1] == "-" ||
-            tokens[index - 1] == "*" || tokens[index - 1] == "/" ||
-            tokens[index - 1] == "^");
+    return tokens[index] == "-" && (index == 0 || tokens[index - 1] == "(" || BinaryTreeUtils::precedence(tokens[index - 1]) > 0);
 }
 
 void BinaryTreeUtils::removeEqualsSign(std::string& expression) {
