@@ -26,8 +26,8 @@
 
 		<MediaTemplate EmbedCab="yes" />
 
-		<Icon Id="BinaryTreeLogo.ico" SourceFile="$(var.BinaryTreeGUIOwl.ProjectDir)\BinaryTreeLogo.ico" />
-		<Property Id="ARPPRODUCTICON">BinaryTreeLogo.ico</Property>
+		<Icon Id="ShortCutLogo" SourceFile="$(var.ProjectDir)\Assets\ShortcutBinaryTree.ico" />
+		<Property Id="ARPPRODUCTICON">ShortCutLogo</Property>
 		<Property Id="ARPURLINFOABOUT">https://github.com/MarjanH05/BinaryTreeProject1</Property>
 
 		<UIRef Id="WixUI_Minimal" />
